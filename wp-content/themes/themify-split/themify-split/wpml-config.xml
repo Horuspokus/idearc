@@ -1,0 +1,136 @@
+<wpml-config>
+	<custom-fields>
+		<custom-field action="ignore">_themify_builder_settings_json</custom-field>
+		<custom-field action="copy-once">layout</custom-field>
+		<custom-field action="copy-once">content_width</custom-field>
+		<custom-field action="copy-once">post_image</custom-field>
+		<custom-field action="copy-once">feature_size</custom-field>
+		<custom-field action="copy-once">image_dimensions</custom-field>
+		<custom-field action="copy-once">imagefilter_options</custom-field>
+		<custom-field action="copy-once">imagefilter_options_hover</custom-field>
+		<custom-field action="copy-once">imagefilter_applyto</custom-field>
+		<custom-field action="copy-once">hide_post_title</custom-field>
+		<custom-field action="copy-once">unlink_post_title</custom-field>
+		<custom-field action="copy-once">hide_meta_multi</custom-field>
+		<custom-field action="copy-once">hide_post_date</custom-field>
+		<custom-field action="copy-once">hide_post_image</custom-field>
+		<custom-field action="copy-once">unlink_post_image</custom-field>
+		<custom-field action="translate">video_url</custom-field>
+		<custom-field action="translate">external_link</custom-field>
+		<custom-field action="copy-once">multi_lightbox_link</custom-field>
+		<custom-field action="copy-once">custom_menu</custom-field>
+		<custom-field action="copy-once">body_background_color</custom-field>
+		<custom-field action="copy-once">body_background_image</custom-field>
+		<custom-field action="copy-once">body_background_repeat</custom-field>
+		<custom-field action="copy-once">color_scheme_mode</custom-field>
+		<custom-field action="copy-once">color_design</custom-field>
+		<custom-field action="copy-once">scheme_color</custom-field>
+		<custom-field action="copy-once">scheme_link</custom-field>
+		<custom-field action="copy-once">scheme_background</custom-field>
+		<custom-field action="copy-once">typography_mode</custom-field>
+		<custom-field action="copy-once">font_design</custom-field>
+		<custom-field action="copy-once">body_font</custom-field>
+		<custom-field action="copy-once">body_text_color</custom-field>
+		<custom-field action="copy-once">body_link_color</custom-field>
+		<custom-field action="copy-once">heading_font</custom-field>
+		<custom-field action="copy-once">heading_color</custom-field>
+		<custom-field action="copy-once">header_design</custom-field>
+		<custom-field action="copy-once">fixed_header</custom-field>
+		<custom-field action="copy-once">full_height_header</custom-field>
+		<custom-field action="copy-once">_multi_header_elements</custom-field>
+		<custom-field action="copy-once">header_wrap</custom-field>
+		<custom-field action="copy-once">_animated_colors</custom-field>
+		<custom-field action="copy-once">background_gallery</custom-field>
+		<custom-field action="copy-once">_video_select</custom-field>
+		<custom-field action="copy-once">background_color</custom-field>
+		<custom-field action="copy-once">background_image</custom-field>
+		<custom-field action="copy-once">background_repeat</custom-field>
+		<custom-field action="copy-once">headerwrap_text_color</custom-field>
+		<custom-field action="copy-once">headerwrap_link_color</custom-field>
+		<custom-field action="copy-once">footer_design</custom-field>
+		<custom-field action="copy-once">_multi_footer_elements</custom-field>
+		<custom-field action="copy-once">page_layout</custom-field>
+		<custom-field action="copy-once">hide_page_title</custom-field>
+		<custom-field action="copy-once">_video_select</custom-field>
+		<custom-field action="copy-once">_query_posts_notice</custom-field>
+		<custom-field action="copy-once">query_category</custom-field>
+		<custom-field action="copy-once">order</custom-field>
+		<custom-field action="copy-once">orderby</custom-field>
+		<custom-field action="copy-once">layout</custom-field>
+		<custom-field action="copy-once">post_content_layout</custom-field>
+		<custom-field action="copy-once">disable_masonry</custom-field>
+		<custom-field action="copy-once">post_gutter</custom-field>
+		<custom-field action="copy-once">more_posts</custom-field>
+		<custom-field action="copy-once">posts_per_page</custom-field>
+		<custom-field action="copy-once">display_content</custom-field>
+		<custom-field action="copy-once">feature_size_page</custom-field>
+		<custom-field action="copy-once">image_dimensions</custom-field>
+		<custom-field action="copy-once">hide_title</custom-field>
+		<custom-field action="copy-once">unlink_title</custom-field>
+		<custom-field action="copy-once">hide_date</custom-field>
+		<custom-field action="copy-once">hide_image</custom-field>
+		<custom-field action="copy-once">unlink_image</custom-field>
+		<custom-field action="copy-once">hide_navigation</custom-field>
+		<custom-field action="copy-once">portfolio_query_category</custom-field>
+		<custom-field action="copy-once">portfolio_order</custom-field>
+		<custom-field action="copy-once">portfolio_orderby</custom-field>
+		<custom-field action="copy-once">portfolio_layout</custom-field>
+		<custom-field action="copy-once">portfolio_post_content_layout</custom-field>
+		<custom-field action="copy-once">portfolio_disable_masonry</custom-field>
+		<custom-field action="copy-once">portfolio_post_gutter</custom-field>
+		<custom-field action="copy-once">portfolio_more_posts</custom-field>
+		<custom-field action="copy-once">portfolio_posts_per_page</custom-field>
+		<custom-field action="copy-once">portfolio_display_content</custom-field>
+		<custom-field action="copy-once">portfolio_feature_size_page</custom-field>
+		<custom-field action="copy-once">_portfolio_image_dimensions</custom-field>
+		<custom-field action="copy-once">portfolio_hide_title</custom-field>
+		<custom-field action="copy-once">portfolio_unlink_title</custom-field>
+		<custom-field action="copy-once">portfolio_hide_meta_all</custom-field>
+		<custom-field action="copy-once">portfolio_hide_image</custom-field>
+		<custom-field action="copy-once">portfolio_unlink_image</custom-field>
+		<custom-field action="copy-once">portfolio_hide_navigation</custom-field>
+		<custom-field action="copy-once">feature_size</custom-field>
+		<custom-field action="copy-once">hide_post_meta</custom-field>
+		<custom-field action="copy-once">post_id_info</custom-field>
+		<custom-field action="copy-once">_separator_project_info</custom-field>
+		<custom-field action="translate">project_date</custom-field>
+		<custom-field action="translate">project_client</custom-field>
+		<custom-field action="translate">project_services</custom-field>
+		<custom-field action="translate">project_launch</custom-field>
+		<custom-field action="copy-once">_video_select</custom-field>
+
+		<custom-field action="copy-once">image_dimensions</custom-field>
+		<custom-field action="copy-once">image_width</custom-field>
+		<custom-field action="copy-once">image_height</custom-field>
+		<custom-field action="copy-once">hide_meta_multi</custom-field>
+		<custom-field action="copy-once">hide_meta_all</custom-field>
+		<custom-field action="copy-once">hide_meta_author</custom-field>
+		<custom-field action="copy-once">hide_meta_category</custom-field>
+		<custom-field action="copy-once">hide_meta_comment</custom-field>
+		<custom-field action="copy-once">hide_meta_tag</custom-field>
+		<custom-field action="translate">iframe_url</custom-field>
+		<custom-field action="translate">lightbox_link</custom-field>
+	</custom-fields>
+	<custom-types>
+		<custom-type translate="1">portfolio</custom-type>
+		<custom-type translate="1">highlight</custom-type>
+		<custom-type translate="1">testimonial</custom-type>
+		<custom-type translate="1">slider</custom-type>
+	</custom-types>    
+	<taxonomies>
+		<taxonomy translate="1">portfolio-category</taxonomy>
+		<taxonomy translate="1">highlight-category</taxonomy>
+		<taxonomy translate="1">testimonial-category</taxonomy>
+		<taxonomy translate="1">slider-category</taxonomy>
+	</taxonomies>    
+	<admin-texts>
+		<key name="themify_data">
+			<key name="setting-header_html" />
+			<key name="setting-footer_html" />
+			<key name="setting-default_more_text" />
+		</key>
+	</admin-texts>
+	<gutenberg-blocks>
+		<gutenberg-block type="themify-builder/canvas" translate="0"/>
+	</gutenberg-blocks>
+</wpml-config>

@@ -1,0 +1,16 @@
+[16-Nov-2025 06:53:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPMailer\PHPMailer\PHPMailer" not found in /home/oftidear/public_html/wp-includes/class-wp-phpmailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/oftidear/public_html/wp-includes/class-wp-phpmailer.php on line 16
+[16-Nov-2025 06:53:16 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Dependencies" not found in /home/oftidear/public_html/wp-includes/class-wp-scripts.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/oftidear/public_html/wp-includes/class-wp-scripts.php on line 18
+[16-Nov-2025 06:53:17 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Dependencies" not found in /home/oftidear/public_html/wp-includes/class-wp-styles.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/oftidear/public_html/wp-includes/class-wp-styles.php on line 18
+[16-Nov-2025 06:53:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_block_template_html() in /home/oftidear/public_html/wp-includes/template-canvas.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/oftidear/public_html/wp-includes/template-canvas.php on line 12
