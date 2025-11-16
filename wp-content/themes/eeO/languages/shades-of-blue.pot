@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR StudioPress
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Shades of Blue 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/shades-of-blue\n"
+"POT-Creation-Date: 2009-08-01 22:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 404.php:9
+msgid "We're sorry, that page was not found - Error 404"
+msgstr ""
+
+#: 404.php:10
+msgid "The page you are looking for no longer exists."
+msgstr ""
+
+#: archive.php:16 author.php:16 index.php:16 search.php:16 tag.php:16
+msgid "Posted by"
+msgstr ""
+
+#: archive.php:16 author.php:16 index.php:16 search.php:16 tag.php:16
+msgid "on"
+msgstr ""
+
+#: archive.php:16 author.php:16 index.php:16 search.php:16 tag.php:16
+msgid "on"
+msgstr ""
+
+#: archive.php:16 author.php:16 index.php:16 search.php:16 tag.php:16
+msgid "1 Comment"
+msgstr ""
+
+#: archive.php:16 author.php:16 index.php:16 search.php:16 tag.php:16
+msgid "% Comments"
+msgstr ""
+
+#: archive.php:16 author.php:16 index.php:16 search.php:16 tag.php:16
+msgid "(Edit)"
+msgstr ""
+
+#: archive.php:22 author.php:22 index.php:22 search.php:22 tag.php:22
+msgid "Filed under"
+msgstr ""
+
+#: archive.php:22 author.php:22 index.php:22 search.php:22 tag.php:22
+msgid "Tagged with"
+msgstr ""
+
+#: archive.php:29 author.php:29 index.php:29 search.php:29 tag.php:29
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: page.php:14
+msgid "(Edit)"
+msgstr ""
+
+#: page.php:26 single.php:48
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: single.php:16
+msgid "Posted by"
+msgstr ""
+
+#: single.php:16
+msgid "on"
+msgstr ""
+
+#: single.php:16
+msgid "(Edit)"
+msgstr ""
+
+#: single.php:26
+msgid "Filed under"
+msgstr ""
+
+#: single.php:26
+msgid "Tagged with"
+msgstr ""
+
+#: single.php:32
+msgid "About"
+msgstr ""
+
+#: sidebar.php:8
+msgid "Search for:"
+msgstr ""
+
+#: sidebar.php:16
+msgid "Categories"
+msgstr ""
+
+#: sidebar.php:31
+msgid "Text Widget"
+msgstr ""
+
+#: sidebar.php:32
+msgid "This is an example of a text widget that you can place to describe a particular product or service. Use it as a way to get your visitors interested, so they can click through and read more about it."
+msgstr ""
+
+#: sidebar.php:37
+msgid "Recent Posts"
+msgstr ""
+
+#: sidebar.php:44
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:51
+msgid "Blogroll"
+msgstr ""
+
+#: sidebar.php:58
+msgid "Meta"
+msgstr ""
+
+#: footer.php:11
+msgid "Footer #1 Widget"
+msgstr ""
+
+#: footer.php:22
+msgid "Footer #2 Widget"
+msgstr ""
+
+#: footer.php:33
+msgid "Footer #3 Widget"
+msgstr ""
+
+#: footer.php:44
+msgid "Footer #4 Widget"
+msgstr ""
+
+#: footer.php:12 footer.php:23 footer.php:34 footer.php:45
+msgid "This is an example of a text widget that you can place to describe a particular product or service. Use it as a way to get your visitors interested, so they can click through and read more about it."
+msgstr ""
+
+#: footer.php:58
+msgid "Theme by"
+msgstr ""
+
+#: comments.php:9
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: comments.php:12 legacy.comments.php:9
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:21 header.php:59
+msgid "Comments"
+msgstr ""
+
+#: comments.php:22 legacy.comments.php:23
+msgid "No Responses"
+msgstr ""
+
+#: comments.php:22 legacy.comments.php:23
+msgid "One Response"
+msgstr ""
+
+#: comments.php:22 legacy.comments.php:23
+msgid "% Responses"
+msgstr ""
+
+#: comments.php:22 legacy.comments.php:23
+msgid "to"
+msgstr ""
+
+#: comments.php:32 legacy.comments.php:58
+msgid "Trackbacks"
+msgstr ""
+
+#: comments.php:33
+msgid "Check out what others are saying about this post..."
+msgstr ""
+
+#: comments.php:46 legacy.comments.php:76
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:56
+msgid "Speak Your Mind"
+msgstr ""
+
+#: comments.php:57 legacy.comments.php:84
+msgid "Tell us what you're thinking..."
+msgstr ""
+
+#: comments.php:57 legacy.comments.php:84
+msgid "and oh, if you want a pic to show with your comment, go get a"
+msgstr ""
+
+#: comments.php:64 legacy.comments.php:87
+msgid "You must be"
+msgstr ""
+
+#: comments.php:64 legacy.comments.php:87
+msgid "logged in"
+msgstr ""
+
+#: comments.php:64 legacy.comments.php:87
+msgid "to post a comment"
+msgstr ""
+
+#: comments.php:71 legacy.comments.php:94
+msgid "Logged in as"
+msgstr ""
+
+#: comments.php:71 legacy.comments.php:94
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:71 legacy.comments.php:94
+msgid "Log out"
+msgstr ""
+
+#: comments.php:76 legacy.comments.php:99
+msgid "Name"
+msgstr ""
+
+#: comments.php:76 comments.php:79 legacy.comments.php:99
+#: legacy.comments.php:102
+msgid "(required)"
+msgstr ""
+
+#: comments.php:79 legacy.comments.php:102
+msgid "Mail (will not be published)"
+msgstr ""
+
+#: comments.php:82 legacy.comments.php:105
+msgid "Website"
+msgstr ""
+
+#: comments.php:90 legacy.comments.php:113
+msgid "Submit Comment"
+msgstr ""
+
+#. Theme Name of an extension
+msgid "Shades of Blue"
+msgstr ""
+
+#. Description of an extension
+msgid "Shades of Blue is a 2-column theme created for WordPress. The sidebar and the footer are fully widgeted, and the navigation is coded for drop-down menus. Shades of Blue has been developed to accomodate threaded comments and sticky posts.This elegant and clean theme was developed by <a href="http://www.studiopress.com">StudioPress</a>."
+msgstr ""
+
+#. Author of an extension
+msgid "StudioPress"
+msgstr ""
+
+#. Author URI of an extension
+msgid "http://www.studiopress.com"
+msgstr ""
+
+#. Tags of an extension
+msgid ""
+"two-columns, right-sidebar, fixed-width, blue, white, threaded-comments, sticky-post"
+msgstr ""

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>limViz – 3D Visualization & Pricing</title>
+  <meta name="description" content="limViz delivers architectural renders, real-time environments, and bespoke 3D visualization software. Explore pricing, services, FAQ, and contact details." />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "limViz 3D Visualization Services",
+    "description": "Architectural and product 3D renders, animations, VR-ready scenes. Tiered pricing for different deliverables.",
+    "provider": {
+      "@type": "Organization",
+      "name": "IDEArcSoftware / limViz",
+      "url": "https://stream.idearc.com.tr"
+    }
+  }
+  </script>
+</head>
+<body id="top" data-i18n-title="pricingTitle">
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#top">limViz</a>
+      <nav aria-label="Primary">
+        <a href="#pricing" class="active" data-scroll data-i18n="pricing">Pricing</a>
+        <a href="#about" data-scroll data-i18n="about">About</a>
+        <a href="#contact" data-scroll data-i18n="contact">Contact</a>
+        <a href="./portfolio.html" data-i18n="portfolio">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <p class="eyebrow">limViz</p>
+        <h1 data-i18n="pricingTitle">3D Visualization Services Pricing</h1>
+        <p class="lead" data-i18n="pricingSubtitle">Clear, flexible pricing for architectural renders, product visuals, and animations. Choose a tier or request a custom quote.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact" data-scroll data-i18n="contactSales">Contact Sales</a>
+          <label class="toggle" for="billingToggle">
+            <input type="checkbox" id="billingToggle" />
+            <span data-i18n="showHourly">Show hourly estimates</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="pricing">Pricing</h2>
+          <p data-i18n="pricingSubtitle">Clear, flexible pricing for architectural renders, product visuals, and animations. Choose a tier or request a custom quote.</p>
+        </div>
+
+        <div class="pricing-grid" aria-label="Pricing tiers">
+          <article class="card">
+            <h3 data-i18n="basic">Basic</h3>
+            <p class="price"><span data-price-eur="100" data-price-monthly="100" data-price-hourly="60">€100</span></p>
+            <ul>
+              <li data-i18n="basicFeature1">1 high-quality still render</li>
+              <li data-i18n="basicFeature2">1 revision</li>
+              <li data-i18n="basicFeature3">Standard lighting &amp; materials</li>
+            </ul>
+            <p class="muted" data-i18n="basicDesc">Good for concept visuals and single-shot renders.</p>
+            <button class="cta" data-tier="Basic" data-i18n="requestBasic">Request Basic</button>
+          </article>
+
+          <article class="card featured">
+            <h3 data-i18n="standard">Standard</h3>
+            <p class="price"><span data-price-eur="950" data-price-monthly="950" data-price-hourly="95">€950</span></p>
+            <ul>
+              <li data-i18n="standardFeature1">Up to 3 still renders</li>
+              <li data-i18n="standardFeature2">2 revisions per image</li>
+              <li data-i18n="standardFeature3">Enhanced materials and lighting</li>
+            </ul>
+            <p class="muted" data-i18n="standardDesc">Ideal for marketing assets and client presentations.</p>
+            <button class="cta" data-tier="Standard" data-i18n="requestStandard">Request Standard</button>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="premium">Premium</h3>
+            <p class="price"><span data-price-eur="2400" data-price-monthly="2400" data-price-hourly="160">€2,400</span></p>
+            <ul>
+              <li data-i18n="premiumFeature1">Up to 8 still renders or short animation</li>
+              <li data-i18n="premiumFeature2">Unlimited revisions within scope</li>
+              <li data-i18n="premiumFeature3">Advanced post-production &amp; compositing</li>
+            </ul>
+            <p class="muted" data-i18n="premiumDesc">For campaigns, product launches, and showreels.</p>
+            <button class="cta" data-tier="Premium" data-i18n="requestPremium">Request Premium</button>
+          </article>
+        </div>
+
+        <div class="add-ons">
+          <h3 data-i18n="addOnsTitle">Add-ons &amp; Custom Options</h3>
+          <ul>
+            <li data-i18n="rushDelivery">Rush delivery (48-72h): +30%</li>
+            <li data-i18n="extraRevisions">Extra revisions: €50 / revision</li>
+            <li data-i18n="interactive360">360° interactive viewer: from €400</li>
+            <li data-i18n="aerialScene">Drone / aerial scene photomatching: +€150</li>
+          </ul>
+        </div>
+
+        <section class="calculator" aria-label="Price calculator">
+          <div>
+            <h3 data-i18n="estimateTitle">Estimate your project</h3>
+            <form id="estimator" onsubmit="return false;">
+              <label>
+                <span data-i18n="tier">Tier:</span>
+                <select id="tierSelect">
+                  <option value="Basic" data-i18n-option="basic">Basic</option>
+                  <option value="Standard" selected data-i18n-option="standard">Standard</option>
+                  <option value="Premium" data-i18n-option="premium">Premium</option>
+                </select>
+              </label>
+
+              <label>
+                <span data-i18n="quantity">Number of images / minutes of animation:</span>
+                <input type="number" id="qty" value="3" min="1" />
+              </label>
+
+              <label>
+                <span data-i18n="rushDeliveryLabel">Rush delivery:</span>
+                <input type="checkbox" id="rush" />
+              </label>
+
+              <label>
+                <span data-i18n="extraRevisionsLabel">Extra revisions:</span>
+                <input type="number" id="revs" value="0" min="0" />
+              </label>
+
+              <p class="estimate"><span data-i18n="estimatedPrice">Estimated price:</span> <strong id="estimateAmount">–</strong></p>
+
+              <div class="actions">
+                <a id="mailtoLink" class="btn secondary" href="mailto:software@idearc.com.tr?subject=limViz%20pricing%20request" data-i18n="contactSales">Contact Sales</a>
+                <button id="copyBtn" class="btn" data-i18n="copyEstimate">Copy estimate</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="faq" id="faq">
+          <h3 data-i18n="faqTitle">FAQ</h3>
+          <details>
+            <summary data-i18n="faqQ1">How long does a project take?</summary>
+            <p data-i18n="faqA1">Typical delivery ranges from 3–14 working days depending on scope and revisions. Rush options available.</p>
+          </details>
+          <details>
+            <summary data-i18n="faqQ2">What do we need to start?</summary>
+            <p data-i18n="faqA2">Reference images, CAD/3D files, dimensions, and a short brief are enough to get started.</p>
+          </details>
+        </section>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="aboutTitle">About limViz</h2>
+          <p data-i18n="aboutSubtitle">We create high-end visual experiences that bridge engineering, architecture, and software.</p>
+        </div>
+
+        <div class="about-grid">
+          <article>
+            <h3 data-i18n="aboutMissionTitle">Our Mission</h3>
+            <p data-i18n="aboutMissionText">To transform complex engineering and architectural ideas into clear, immersive, and interactive visual experiences through cutting-edge technology.</p>
+          </article>
+          <article>
+            <h3 data-i18n="aboutWhatWeDoTitle">What We Do</h3>
+            <ul>
+              <li data-i18n="aboutWhat1">High-end 3D visualization for infrastructure &amp; architecture</li>
+              <li data-i18n="aboutWhat2">Real-time experiences using Unreal Engine &amp; Cesium</li>
+              <li data-i18n="aboutWhat3">VR/AR-ready environments &amp; cinematic walkthroughs</li>
+              <li data-i18n="aboutWhat4">Custom software, plugins, and digital twins</li>
+              <li data-i18n="aboutWhat5">BIM for Infrastructure (IFC 4.3 workflows)</li>
+            </ul>
+          </article>
+          <article>
+            <h3 data-i18n="aboutWhyTitle">Why Choose Us</h3>
+            <ul>
+              <li data-i18n="aboutWhy1">Engineering-grade accuracy and high realism</li>
+              <li data-i18n="aboutWhy2">Optimized pipelines for large-scale scenes</li>
+              <li data-i18n="aboutWhy3">Cross-disciplinary expertise in design, engineering, and software</li>
+              <li data-i18n="aboutWhy4">RTX 6000 Ada powered cloud infrastructure</li>
+              <li data-i18n="aboutWhy5">Fast delivery and scalable production capacity</li>
+            </ul>
+          </article>
+          <article>
+            <h3 data-i18n="aboutVisionTitle">Our Vision</h3>
+            <p data-i18n="aboutVisionText">To become a global hub where infrastructure, design, and technology merge to create intuitive and immersive digital experiences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h2 data-i18n="contactTitle">Contact limViz</h2>
+          <p data-i18n="contactSubtitle">For quotes, availability, or general enquiries — drop us a message and we'll get back within 1–2 business days.</p>
+          <div class="contact-meta">
+            <div>
+              <p class="label" data-i18n="email">Email</p>
+              <p><a href="mailto:software@idearc.com.tr">software@idearc.com.tr</a></p>
+            </div>
+            <div>
+              <p class="label" data-i18n="businessHours">Business hours</p>
+              <p data-i18n="businessHoursTime">Mon–Fri, 09:00–18:00 (GMT+3)</p>
+            </div>
+            <div>
+              <p class="label" data-i18n="other">Other</p>
+              <ul>
+                <li data-i18n="portfolioLink">Link to portfolio, repo or socials</li>
+              </ul>
+            </div>
+          </div>
+          <div class="privacy">
+            <h3 data-i18n="privacyTitle">Privacy &amp; attachments</h3>
+            <p data-i18n="privacyText">This form opens your mail client and does not upload attachments to this site. If you need to send large files, please share a link (Dropbox/Drive) in your message.</p>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3 data-i18n="sendMessage">Send us a message</h3>
+          <form id="contactForm" onsubmit="return false;">
+            <label>
+              <span data-i18n="yourName">Your name</span>
+              <input id="name" type="text" required data-i18n-placeholder="yourName" placeholder="Your name" />
+            </label>
+            <label>
+              <span data-i18n="yourEmail">Your email</span>
+              <input id="email" type="email" required placeholder="you@company.com" />
+            </label>
+            <label>
+              <span data-i18n="subject">Subject</span>
+              <input id="subject" type="text" data-i18n-placeholder="subjectPlaceholder" placeholder="Project: exterior renders" />
+            </label>
+            <label>
+              <span data-i18n="message">Message</span>
+              <textarea id="message" rows="5" required data-i18n-placeholder="messagePlaceholder" placeholder="Brief project description, files available, deadline..."></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button id="sendBtn" class="btn" data-i18n="sendEmail">Send email</button>
+              <button id="copyMsgBtn" class="btn secondary" type="button" data-i18n="copyMessage">Copy message</button>
+              <small class="inline" data-i18n="orEmail">Or email:</small>
+              <a class="inline" href="mailto:software@idearc.com.tr">software@idearc.com.tr</a>
+            </div>
+            <p id="status" class="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footerCopyright">© IDEArcSoftware – limViz 3D Visualization Services</p>
+      <p><a href="mailto:software@idearc.com.tr">software@idearc.com.tr</a></p>
+    </div>
+  </footer>
+
+  <script src="./js/i18n.js"></script>
+  <script src="./js/pricing.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

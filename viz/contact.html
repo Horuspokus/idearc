@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>limViz – Contact</title>
+  <meta name="description" content="Contact limViz for 3D visualization quotes, collaboration, and support." />
+  <link rel="stylesheet" href="./css/pricing.css" />
+</head>
+<body data-i18n-title="contactTitle">
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="./pricing.html">limViz</a>
+      <nav aria-label="Primary">
+        <a href="./about.html" data-i18n="about">About</a>
+        <a href="./contact.html" class="active" data-i18n="contact">Contact</a>
+        <a href="./portfolio.html" data-i18n="portfolio">Portfolio</a>
+        <a href="./pricing.html" data-i18n="pricing">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 data-i18n="contactTitle">Contact limViz</h1>
+      <p data-i18n="contactSubtitle">For quotes, availability, or general enquiries – drop us a message and we'll get back within 1–2 business days.</p>
+    </section>
+
+    <section style="margin-top:18px; display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+      <div style="background:rgba(255,255,255,0.02); padding:18px; border-radius:10px;">
+        <h2 data-i18n="quickContact">Quick contact</h2>
+        <p style="color:var(--muted)" data-i18n="email">Email</p>
+        <p><a href="mailto:software@idearc.com.tr">software@idearc.com.tr</a></p>
+
+        <p style="color:var(--muted); margin-top:10px;" data-i18n="businessHours">Business hours</p>
+        <p data-i18n="businessHoursTime">Mon–Fri, 09:00–18:00 (GMT+3)</p>
+
+        <p style="color:var(--muted); margin-top:10px;" data-i18n="other">Other</p>
+        <ul style="padding-left:18px; color:var(--muted); margin:6px 0 0;">
+          <li data-i18n="portfolioLink">Link to portfolio, repo or socials</li>
+        </ul>
+      </div>
+
+      <div style="background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005)); padding:18px; border-radius:10px;">
+        <h2 data-i18n="sendMessage">Send us a message</h2>
+        <form id="contactForm" onsubmit="return false;" aria-label="Contact form" style="display:grid; gap:10px;">
+          <label>
+            <span data-i18n="yourName">Your name</span>
+            <input id="name" type="text" required data-i18n-placeholder="yourName" placeholder="Your name" style="width:100%; padding:8px; border-radius:6px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit"/>
+          </label>
+          <label>
+            <span data-i18n="yourEmail">Your email</span>
+            <input id="email" type="email" required placeholder="you@company.com" style="width:100%; padding:8px; border-radius:6px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit"/>
+          </label>
+          <label>
+            <span data-i18n="subject">Subject</span>
+            <input id="subject" type="text" data-i18n-placeholder="subjectPlaceholder" placeholder="Project: exterior renders" style="width:100%; padding:8px; border-radius:6px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit"/>
+          </label>
+          <label>
+            <span data-i18n="message">Message</span>
+            <textarea id="message" rows="5" required data-i18n-placeholder="messagePlaceholder" placeholder="Brief project description, files available, deadline..." style="width:100%; padding:8px; border-radius:6px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit"></textarea>
+          </label>
+
+          <div style="display:flex; gap:8px; align-items:center;">
+            <button id="sendBtn" class="btn" data-i18n="sendEmail">Send email</button>
+            <button id="copyBtn" class="btn secondary" type="button" data-i18n="copyMessage">Copy message</button>
+            <small style="color:var(--muted); margin-left:auto;"><span data-i18n="orEmail">Or email:</span> <a href="mailto:software@idearc.com.tr">software@idearc.com.tr</a></small>
+          </div>
+
+          <p id="status" style="color:var(--muted); margin:6px 0 0;"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq" style="margin-top:18px;">
+      <h2 data-i18n="privacyTitle">Privacy & attachments</h2>
+      <p style="color:var(--muted)" data-i18n="privacyText">This form opens your mail client and does not upload attachments to this site. If you need to send large files, please share a link (Dropbox/Drive) in your message.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footerCopyright">© IDEArcSoftware – limViz 3D Visualization Services</p>
+      <p><a href="mailto:software@idearc.com.tr">software@idearc.com.tr</a></p>
+    </div>
+  </footer>
+
+  <script src="./js/i18n.js"></script>
+  <script>
+    (function(){
+      const sendBtn = document.getElementById('sendBtn');
+      const copyBtn = document.getElementById('copyBtn');
+      const status = document.getElementById('status');
+
+      function encodeMailto(to, subject, body) {
+        return 'mailto:' + encodeURIComponent(to)
+          + '?subject=' + encodeURIComponent(subject)
+          + '&body=' + encodeURIComponent(body);
+      }
+
+      sendBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim() || window.i18n.t('emailSubjectInquiry');
+        const message = document.getElementById('message').value.trim();
+
+        if(!name || !email || !message){
+          status.textContent = window.i18n.t('fillRequired');
+          return;
+        }
+
+        const bodyLines = [
+          `${window.i18n.t('emailBodyName')} ${name}`,
+          `${window.i18n.t('emailBodyEmail')} ${email}`,
+          '',
+          message,
+          '',
+          '---',
+          window.i18n.t('emailBodyAttachment')
+        ];
+        const body = bodyLines.join('\n');
+
+        window.location.href = encodeMailto('software@idearc.com.tr', subject, body);
+        status.textContent = window.i18n.t('openingEmail');
+      });
+
+      copyBtn.addEventListener('click', function(){
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim() || window.i18n.t('emailSubjectInquiry');
+        const message = document.getElementById('message').value.trim();
+        const text = `${window.i18n.t('subject')}: ${subject}\n${window.i18n.t('emailBodyName')} ${name}\n${window.i18n.t('emailBodyEmail')} ${email}\n\n${message}`;
+        if(navigator.clipboard){
+          navigator.clipboard.writeText(text).then(()=>{
+            status.textContent = window.i18n.t('copiedClipboard');
+            setTimeout(()=> status.textContent = '', 3000);
+          });
+        } else {
+          alert(text);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
