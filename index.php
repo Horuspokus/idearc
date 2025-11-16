@@ -1,17 +1,16 @@
 <?php
 /**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
+ * Lightweight bootstrap to serve the static IDEArc site.
+ * WordPress files remain in the repository for reference,
+ * but the public entry point now streams the static HTML version.
  */
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define( 'WP_USE_THEMES', true );
+$staticIndex = __DIR__ . '/index.html';
 
-/** Loads the WordPress Environment and Template */
-require __DIR__ . '/wp-blog-header.php';
+if (is_file($staticIndex)) {
+    readfile($staticIndex);
+    return;
+}
+
+http_response_code(500);
+echo 'Static site not found.';
