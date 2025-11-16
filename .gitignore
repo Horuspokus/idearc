@@ -1,0 +1,87 @@
+#------------------------------------------------------------------------------
+# IDEArc project .gitignore
+# Keeps source (themes, plugins, custom apps) while ignoring generated assets,
+# environment-specific secrets, caches, and bulky uploads/backups.
+#------------------------------------------------------------------------------
+
+# OS / Editor clutter --------------------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+*.swp
+*.swo
+*.swn
+*.tmp
+*.temp
+*~
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# Environment & secrets ------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.sample
+.user.ini
+php.ini
+wp-config.php
+
+# Dependency / build outputs -------------------------------------------------
+node_modules/
+vendor/
+packages/
+bower_components/
+.pnpm-store/
+.turbo/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+dist/
+build/
+coverage/
+reports/
+tmp/
+.tmp/
+.sass-cache/
+*.log
+logs/
+error_log
+
+# WordPress-generated files ---------------------------------------------------
+wp-content/cache/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/languages/
+wp-content/wflogs/
+wp-content/debug.log
+wp-content/*.log
+
+# Backup archives / exports ---------------------------------------------------
+*.bak
+*.bk
+*.old
+*.orig
+*.save
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.gz
+*.7z
+*.rar
+
+# Misc hosting artifacts ------------------------------------------------------
+.well-known/
+cgi-bin/
+.litespeed_flag
+.tmb/
+.trash/
