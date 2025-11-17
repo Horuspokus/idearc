@@ -8,14 +8,29 @@ const translations = {
     brandName: 'IDEArc',
     menuLabel: 'Menü',
     navHome: 'Anasayfa',
+    navMetrics: 'Metrikler',
     navAbout: 'Hakkında',
     navPortfolio: 'Portföy',
     navReferences: 'Referanslar',
     navExpertise: 'Uzmanlıklar',
     navContact: 'İletişim',
-    heroTicker: 'ULUSLARARASI MÜHENDİSLİK VE MÜŞAVİRLİK',
+    heroTicker: 'IDEArc Uluslararası Mühendislik ve Müşavirlik Limited Şirketi',
     heroHeading: 'Infrastructure Design Engineering & Architecture',
     heroDescription: '2015’ten bu yana mega ulaştırma projeleri, lojistik sahaları ve kentsel dönüşüm programları için BIM tabanlı mühendislik üretiyoruz. İnsanları değil makineleri koştururuz.',
+    metricsTitle: 'Projelerin ölçeğini konuşalım',
+    metricsLead: 'Mega ulaştırma ve karma kullanım yatırımlarında ölçülebilir çıktılar.',
+    metricCompaniesValue: '130+',
+    metricCompaniesLabel: 'Kurumsal müşteri',
+    metricCompaniesDesc: 'Kamu kurumları ve geliştiricilerle 130’dan fazla iş birliği.',
+    metricProjectsValue: '700+',
+    metricProjectsLabel: 'Tamamlanan proje',
+    metricProjectsDesc: 'Ulaşım, lojistik ve danışmanlıkta 700’den fazla teslim.',
+    metricYearsValue: '10+',
+    metricYearsLabel: 'Yıllık deneyim',
+    metricYearsDesc: 'BIM tabanlı teslimlerle altyapı mühendisliği ve danışmanlık.',
+    metricTeamValue: '20+',
+    metricTeamLabel: 'Uzman ekip',
+    metricTeamDesc: 'IFC 4.3, Civil 3D ve otomasyon uzmanlarından oluşan ağ.',
     heroCTAProjects: 'Projelerimizi keşfedin',
     heroCTAContact: 'Bize ulaşın',
     pillTeamTitle: 'Uzman Ekip',
@@ -62,7 +77,7 @@ const translations = {
     ctaPortfolioTr: 'Portföy (TR)',
     ctaPortfolioEn: 'Portfolio (EN)',
     ctaPdfArchive: 'PDF arşivini aç',
-    ctaAllProjects: 'Tüm projeler',
+    ctaAllProjects: 'Videolar',
     referencesTitle: 'Güvenen kurumlar',
     referencesLead: 'Tüpraş’tan belediyelere, OSB’lerden özel geliştiricilere kadar geniş bir referans listesi.',
     expertiseTitle: 'Uzmanlık alanlarımız',
@@ -96,6 +111,7 @@ const translations = {
     formMessagePlaceholder: 'Kısa proje tarifi, teslim tarihi, dosyalar...',
     formSendBtn: 'E-posta gönder',
     formCopyBtn: 'Mesajı kopyala',
+    formHumanLabel: 'Robot olmadığımı onaylıyorum',
     footerNote: '© IDEArc Uluslararası Mühendislik ve Müşavirlik Ltd. Şti. – 2025',
     statusRequired: 'Lütfen ad, e-posta ve mesaj alanlarını doldurun.',
     statusOpeningMail: 'E-posta istemciniz açılıyor…',
@@ -103,6 +119,7 @@ const translations = {
     statusCopyError: 'Kopyalama başarısız oldu, manuel olarak seçip kopyalayın.',
     statusCopyEmpty: 'Kopyalamak için mesaj alanını doldurun.',
     statusCopyUnsupported: 'Tarayıcınız otomatik kopyalamayı desteklemiyor.',
+    statusHumanValidation: 'Lütfen insan doğrulamasını işaretleyin.',
     mailLabelName: 'Ad Soyad',
     mailLabelEmail: 'E-posta',
     mailLabelSubject: 'Konu',
@@ -114,14 +131,29 @@ const translations = {
     brandName: 'IDEArc',
     menuLabel: 'Menu',
     navHome: 'Home',
+    navMetrics: 'Metrics',
     navAbout: 'About',
     navPortfolio: 'Portfolio',
     navReferences: 'References',
     navExpertise: 'Expertise',
     navContact: 'Contact',
-    heroTicker: 'INTERNATIONAL ENGINEERING & CONSULTING',
+    heroTicker: 'IDEArc International Engineering & Consulting Limited Company',
     heroHeading: 'Infrastructure Design Engineering & Architecture',
     heroDescription: 'Since 2015 we have been building BIM-driven solutions for mega mobility projects, logistics campuses, and urban realm upgrades.',
+    metricsTitle: 'Scale with measurable impact',
+    metricsLead: 'Data-backed output across mega transport and mixed-use programs.',
+    metricCompaniesValue: '130+',
+    metricCompaniesLabel: 'Enterprise clients',
+    metricCompaniesDesc: 'More than 130 ongoing collaborations with public agencies and developers.',
+    metricProjectsValue: '700+',
+    metricProjectsLabel: 'Completed projects',
+    metricProjectsDesc: 'Over 700 transport, logistics and consulting deliveries.',
+    metricYearsValue: '10+',
+    metricYearsLabel: 'Years of experience',
+    metricYearsDesc: 'Infrastructure engineering and consulting powered by BIM deliveries.',
+    metricTeamValue: '20+',
+    metricTeamLabel: 'Specialist team',
+    metricTeamDesc: 'Network of IFC 4.3, Civil 3D and automation experts.',
     heroCTAProjects: 'Explore our projects',
     heroCTAContact: 'Contact us',
     pillTeamTitle: 'Specialist Team',
@@ -168,7 +200,7 @@ const translations = {
     ctaPortfolioTr: 'Portfolio (TR)',
     ctaPortfolioEn: 'Portfolio (EN)',
     ctaPdfArchive: 'Open PDF archive',
-    ctaAllProjects: 'View all projects',
+    ctaAllProjects: 'Videos',
     referencesTitle: 'Trusted by',
     referencesLead: 'From energy majors to municipalities, OIZs and private developers.',
     expertiseTitle: 'Areas of expertise',
@@ -202,6 +234,7 @@ const translations = {
     formMessagePlaceholder: 'Brief scope, deadline, files…',
     formSendBtn: 'Send email',
     formCopyBtn: 'Copy message',
+    formHumanLabel: 'I confirm I am human',
     footerNote: '© IDEArc International Engineering & Consulting Ltd. 2025',
     statusRequired: 'Please fill in name, email and message.',
     statusOpeningMail: 'Opening your email client…',
@@ -209,6 +242,7 @@ const translations = {
     statusCopyError: 'Copy failed, please select and copy manually.',
     statusCopyEmpty: 'Please enter a message before copying.',
     statusCopyUnsupported: 'Your browser does not support automatic copy.',
+    statusHumanValidation: 'Please confirm you are human.',
     mailLabelName: 'Name',
     mailLabelEmail: 'Email',
     mailLabelSubject: 'Subject',
@@ -220,14 +254,29 @@ const translations = {
     brandName: 'IDEArc',
     menuLabel: 'القائمة',
     navHome: 'الرئيسية',
+    navMetrics: 'المؤشرات',
     navAbout: 'من نحن',
     navPortfolio: 'المشاريع',
     navReferences: 'العملاء',
     navExpertise: 'الخبرات',
     navContact: 'اتصل بنا',
-    heroTicker: 'الهندسة والاستشارات الدولية',
+    heroTicker: 'شركة IDEArc الدولية للهندسة والاستشارات المحدودة',
     heroHeading: 'هندسة تصميم البنية التحتية والعمارة',
     heroDescription: 'منذ عام 2015 نطوّر حلولاً معتمدة على BIM لمشاريع النقل الكبرى، ومجمعات الخدمات اللوجستية، وتحسين المشهد الحضري.',
+    metricsTitle: 'أرقامنا في المشاريع الكبرى',
+    metricsLead: 'نتائج قابلة للقياس في مشاريع النقل والمجمعات متعددة الاستخدام.',
+    metricCompaniesValue: '130+',
+    metricCompaniesLabel: 'عملاء شركات',
+    metricCompaniesDesc: 'أكثر من 130 شريكاً من الهيئات العامة والمطورين.',
+    metricProjectsValue: '700+',
+    metricProjectsLabel: 'مشاريع منجزة',
+    metricProjectsDesc: 'أكثر من 700 مهمة في النقل واللوجستيات والاستشارات.',
+    metricYearsValue: '10+',
+    metricYearsLabel: 'سنوات الخبرة',
+    metricYearsDesc: 'هندسة واستشارات بنية تحتية بتسليمات BIM.',
+    metricTeamValue: '20+',
+    metricTeamLabel: 'فريق متخصص',
+    metricTeamDesc: 'شبكة خبراء IFC 4.3 وCivil 3D والأتمتة.',
     heroCTAProjects: 'استعرض مشاريعنا',
     heroCTAContact: 'تواصل معنا',
     pillTeamTitle: 'فريق متخصص',
@@ -274,7 +323,7 @@ const translations = {
     ctaPortfolioTr: 'الملف (TR)',
     ctaPortfolioEn: 'الملف (EN)',
     ctaPdfArchive: 'افتح أرشيف PDF',
-    ctaAllProjects: 'كل المشاريع',
+    ctaAllProjects: 'الفيديوهات',
     referencesTitle: 'عملاؤنا',
     referencesLead: 'من شركات الطاقة إلى البلديات والمطورين والـ OIZ.',
     expertiseTitle: 'مجالات الخبرة',
@@ -308,6 +357,7 @@ const translations = {
     formMessagePlaceholder: 'وصف موجز، موعد التسليم، الملفات…',
     formSendBtn: 'إرسال بريد',
     formCopyBtn: 'نسخ الرسالة',
+    formHumanLabel: 'أؤكد أنني لست روبوتاً',
     footerNote: '© شركة IDEArc للهندسة والاستشارات الدولية 2025',
     statusRequired: 'يرجى تعبئة الاسم والبريد والرسالة.',
     statusOpeningMail: 'يتم فتح برنامج البريد…',
@@ -315,6 +365,7 @@ const translations = {
     statusCopyError: 'فشل النسخ، يرجى النسخ يدوياً.',
     statusCopyEmpty: 'يرجى كتابة الرسالة قبل النسخ.',
     statusCopyUnsupported: 'المتصفح لا يدعم النسخ التلقائي.',
+    statusHumanValidation: 'يرجى تأكيد التحقق البشري.',
     mailLabelName: 'الاسم',
     mailLabelEmail: 'البريد',
     mailLabelSubject: 'الموضوع',
@@ -370,6 +421,13 @@ function setLanguage(lang) {
 }
 
 function smoothScrollTo(targetId) {
+  if (!targetId) return;
+
+  if (targetId === '#anasayfa') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+
   const el = document.querySelector(targetId);
   if (!el) return;
   el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -386,9 +444,39 @@ function setStatusKey(key, isError) {
   statusEl.style.color = isError ? '#ff6b6b' : 'var(--muted)';
 }
 
+function decodeValue(value) {
+  if (!value) return '';
+  try {
+    return atob(value);
+  } catch {
+    return value;
+  }
+}
+
+function initProtectedContacts() {
+  document.querySelectorAll('[data-protect="phone"]').forEach((el) => {
+    const text = decodeValue(el.dataset.display);
+    const link = decodeValue(el.dataset.link);
+    if (text) el.textContent = text;
+    if (link && el.tagName === 'A') {
+      el.setAttribute('href', `tel:${link}`);
+    }
+  });
+
+  document.querySelectorAll('[data-protect="email"]').forEach((el) => {
+    const text = decodeValue(el.dataset.display);
+    const link = decodeValue(el.dataset.link) || text;
+    if (text) el.textContent = text;
+    if (link && el.tagName === 'A') {
+      el.setAttribute('href', `mailto:${link}`);
+    }
+  });
+}
+
 function initPage() {
   const nav = document.getElementById('primaryNav');
   const toggleBtn = document.querySelector('[data-nav-toggle]');
+  const homeUrl = document.body.dataset.home || 'index.html';
 
   function toggleNav() {
     if (!nav) return;
@@ -416,6 +504,13 @@ function initPage() {
     link.addEventListener('click', (event) => {
       const href = link.getAttribute('href') || link.getAttribute('data-scroll-target');
       if (!href || !href.startsWith('#')) return;
+      const isHome = document.body.dataset.page === 'home';
+      if (!isHome) {
+        event.preventDefault();
+        closeNav();
+        window.location.href = `${homeUrl}${href}`;
+        return;
+      }
       event.preventDefault();
       smoothScrollTo(href);
       closeNav();
@@ -442,6 +537,12 @@ function initPage() {
 
     if (!name || !email || !message) {
       setStatusKey('statusRequired', true);
+      return;
+    }
+
+    const humanCheck = document.getElementById('humanCheck');
+    if (humanCheck && !humanCheck.checked) {
+      setStatusKey('statusHumanValidation', true);
       return;
     }
 
@@ -496,6 +597,7 @@ function initPage() {
 
   const savedLang = localStorage.getItem('idearc-lang') || DEFAULT_LANG;
   setLanguage(savedLang);
+  initProtectedContacts();
 }
 
 document.addEventListener('DOMContentLoaded', initPage);

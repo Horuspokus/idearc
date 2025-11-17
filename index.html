@@ -22,7 +22,7 @@
       "https://twitter.com/idearccomtr",
       "https://www.instagram.com/idearccomtr/",
       "https://www.facebook.com/idearccomtr",
-      "https://www.youtube.com/channel/UCsCrbRAqZkJqbdA4oNRSDrw"
+      "https://www.youtube.com/@IDEArcLLC"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -41,18 +41,20 @@
   }
   </script>
 </head>
-<body>
+<body data-page="home" data-home="index.html">
   <header class="site-header" id="anasayfa">
     <div class="container">
-      <a class="logo" href="#anasayfa" data-scroll data-i18n="brandName">IDEArc</a>
+      <a class="logo" href="#anasayfa" data-scroll>
+        <img src="./images/IDEArc_white.png" alt="IDEArc" />
+        <span class="sr-only" data-i18n="brandName">IDEArc</span>
+      </a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" data-i18n="menuLabel">Menü</button>
       <nav id="primaryNav" aria-label="Ana menü">
         <a href="#anasayfa" data-scroll class="active" data-i18n="navHome">Anasayfa</a>
-        <a href="#hakkinda" data-scroll data-i18n="navAbout">Hakkında</a>
-        <a href="#portfoy" data-scroll data-i18n="navPortfolio">Portföy</a>
-        <a href="#referanslar" data-scroll data-i18n="navReferences">Referanslar</a>
-        <a href="#uzmanliklar" data-scroll data-i18n="navExpertise">Uzmanlıklar</a>
-        <a href="#iletisim" data-scroll data-i18n="navContact">İletişim</a>
+        <a href="./hakkinda.html" data-i18n="navAbout">Hakkında</a>
+        <a href="./portfoy.html" data-i18n="navPortfolio">Portföy</a>
+        <a href="./uzmanliklar.html" data-i18n="navExpertise">Uzmanlıklar</a>
+        <a href="./iletisim.html" data-i18n="navContact">İletişim</a>
       </nav>
       <div class="lang-toggle" role="group" aria-label="Language switcher">
         <button class="lang-btn active" data-lang-btn data-lang="tr">TR</button>
@@ -60,26 +62,36 @@
         <button class="lang-btn" data-lang-btn data-lang="ar">AR</button>
       </div>
       <div class="socials" aria-label="Sosyal medya">
-        <a href="https://www.linkedin.com/company/idearccomtr" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
-        <a href="https://twitter.com/idearccomtr" target="_blank" rel="noopener" aria-label="Twitter">TW</a>
-        <a href="https://www.instagram.com/idearccomtr/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-        <a href="https://www.facebook.com/idearccomtr" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
-        <a href="https://www.youtube.com/channel/UCsCrbRAqZkJqbdA4oNRSDrw" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+        <a href="https://www.linkedin.com/company/idearccomtr" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg aria-hidden="true"><use href="./assets/icons/social.svg#icon-ln"></use></svg>
+        </a>
+        <a href="https://twitter.com/idearccomtr" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg aria-hidden="true"><use href="./assets/icons/social.svg#icon-tt"></use></svg>
+        </a>
+        <a href="https://www.instagram.com/idearccomtr/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg aria-hidden="true"><use href="./assets/icons/social.svg#icon-it"></use></svg>
+        </a>
+        <a href="https://www.facebook.com/idearccomtr" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg aria-hidden="true"><use href="./assets/icons/social.svg#icon-fb"></use></svg>
+        </a>
+        <a href="https://www.youtube.com/@IDEArcLLC" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg aria-hidden="true"><use href="./assets/icons/social.svg#icon-yt"></use></svg>
+        </a>
       </div>
     </div>
   </header>
 
   <section class="hero" aria-label="IDEArc hero">
     <video autoplay muted loop playsinline poster="./wp-content/uploads/idearc-small-shaded.png">
-      <source src="./wp-content/uploads/infra2.mp4" type="video/mp4" />
+      <source src="./images/idearcHeroNew.mp4" type="video/mp4" />
     </video>
     <div class="hero-content container">
-      <span class="ticker" data-i18n="heroTicker">ULUSLARARASI MÜHENDİSLİK VE MÜŞAVİRLİK</span>
+      <span class="ticker" data-i18n="heroTicker">IDEArc Uluslararası Mühendislik ve Müşavirlik Limited Şirketi</span>
       <h1 data-i18n="heroHeading">Infrastructure Design Engineering &amp; Architecture</h1>
       <p data-i18n="heroDescription">2015’ten bu yana mega ulaştırma projeleri, lojistik sahaları ve kentsel dönüşüm programları için BIM tabanlı mühendislik üretiyoruz. İnsanları değil makineleri koştururuz.</p>
       <div class="hero-actions">
-        <a class="btn primary" href="#portfoy" data-scroll data-i18n="heroCTAProjects">Projelerimizi keşfedin</a>
-        <a class="btn secondary" href="#iletisim" data-scroll data-i18n="heroCTAContact">Bize ulaşın</a>
+        <a class="btn primary" href="./portfoy.html" data-i18n="heroCTAProjects">Projelerimizi keşfedin</a>
+        <a class="btn secondary" href="./iletisim.html" data-i18n="heroCTAContact">Bize ulaşın</a>
       </div>
       <div class="pill-grid" style="margin-top:32px;">
         <article class="pill">
@@ -98,138 +110,33 @@
     </div>
   </section>
 
-  <section id="hakkinda" class="section">
+  <section id="metrikler" class="section metrics">
     <div class="container">
       <div class="section-header">
-        <h2 data-i18n="aboutTitle">IDEArc hakkında</h2>
-        <p data-i18n="aboutLead">IDEArc Uluslararası Mühendislik ve Müşavirlik Şirketi 2015 yılında, klasik karayolu mühendisliğinin ötesine geçip BIM ve sivil mühendislik alanlarında uzmanlaşmak amacıyla kuruldu.</p>
+        <h2 data-i18n="metricsTitle">Projelerin ölçeğini konuşalım</h2>
+        <p data-i18n="metricsLead">Mega ulaştırma ve karma kullanım yatırımlarında ölçülebilir çıktılar.</p>
       </div>
-      <div class="about-wrapper">
-        <article class="about-card">
-          <h3 data-i18n="aboutMissionTitle">Misyonumuz</h3>
-          <p data-i18n="aboutMissionDesc">Altyapı ve üstyapı projelerini mühendislik hassasiyetinde, dijital ikiz yaklaşımıyla geleceğe taşıyan çözümler geliştirmek.</p>
+      <div class="metrics-grid">
+        <article class="metric-card">
+          <span class="metric-value" data-i18n="metricCompaniesValue">130+</span>
+          <p class="metric-label" data-i18n="metricCompaniesLabel">Kurumsal müşteri</p>
+          <p class="metric-desc" data-i18n="metricCompaniesDesc">Kamu kurumları ve geliştiricilerle devam eden 130’dan fazla iş birliği.</p>
         </article>
-        <article class="about-card">
-          <h3 data-i18n="aboutWhatTitle">Ne yapıyoruz?</h3>
-          <ul>
-            <li data-i18n="aboutWhat1">Yol, kavşak, bulvar ve bağlantı yolları geometrik tasarımı</li>
-            <li data-i18n="aboutWhat2">OSB, liman, lojistik ve sanayi alanları için toprak işleri ve altyapı</li>
-            <li data-i18n="aboutWhat3">Kentsel tasarım, meydan, sahil ve kamusal alan projeleri</li>
-            <li data-i18n="aboutWhat4">UTK / UKOME süreçleri için rapor ve plan hazırlığı</li>
-          </ul>
+        <article class="metric-card">
+          <span class="metric-value" data-i18n="metricProjectsValue">700+</span>
+          <p class="metric-label" data-i18n="metricProjectsLabel">Tamamlanan proje</p>
+          <p class="metric-desc" data-i18n="metricProjectsDesc">Ulaşım, lojistik ve danışmanlıkta teslim edilen 700’den fazla görev.</p>
         </article>
-        <article class="about-card">
-          <h3 data-i18n="aboutWhyTitle">Neden IDEArc?</h3>
-          <p data-i18n="aboutWhyDesc">Çapraz disiplinli ekip, hızlı teslim, optimize edilmiş maliyetler ve maksimum sürdürülebilirlik için veri odaklı süreçleri tek çatı altında topluyoruz.</p>
+        <article class="metric-card">
+          <span class="metric-value" data-i18n="metricYearsValue">10+</span>
+          <p class="metric-label" data-i18n="metricYearsLabel">Yıllık deneyim</p>
+          <p class="metric-desc" data-i18n="metricYearsDesc">BIM tabanlı teslimlerle altyapı mühendisliği ve danışmanlık.</p>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="portfoy" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 data-i18n="portfolioTitle">Öne çıkan projeler</h2>
-        <p data-i18n="portfolioLead">Danışmanlık, kentsel tasarım, lojistik, sanayi ve yol projelerinden seçilen çalışmalar.</p>
-      </div>
-      <div class="portfolio-grid">
-        <article class="project-card">
-          <img src="./wp-content/uploads/yalova-01.jpg" alt="Yalova Avrasya OSB" />
-          <div class="project-body">
-            <div class="badges">
-              <span class="badge" data-i18n="badgeLogistics">Lojistik</span>
-              <span class="badge" data-i18n="badgeIndustry">Sanayi Alanları</span>
-              <span class="badge" data-i18n="badgeEarthworks">Toprak İşleri</span>
-            </div>
-            <h3 data-i18n="projectYalovaTitle">Yalova Avrasya OSB</h3>
-            <p data-i18n="projectYalovaDesc">300 hektarlık entegre sanayi bölgesi için yol, altyapı ve lojistik planlama.</p>
-          </div>
+        <article class="metric-card">
+          <span class="metric-value" data-i18n="metricTeamValue">20+</span>
+          <p class="metric-label" data-i18n="metricTeamLabel">Uzman ekip</p>
+          <p class="metric-desc" data-i18n="metricTeamDesc">IFC 4.3, Civil 3D ve otomasyon uzmanlarından oluşan ağ.</p>
         </article>
-        <article class="project-card">
-          <img src="./wp-content/uploads/askoop-01.png" alt="İstanbul Askoop Sanayi Bölgesi" />
-          <div class="project-body">
-            <div class="badges">
-              <span class="badge" data-i18n="badgeConsulting">Danışmanlık</span>
-              <span class="badge" data-i18n="badgeRoads">Yol Projeleri</span>
-            </div>
-            <h3 data-i18n="projectAskoopTitle">İstanbul Askoop Sanayi Bölgesi</h3>
-            <p data-i18n="projectAskoopDesc">100 hektarlık sanayi master planında ulaşım ve galeri altyapısı danışmanlığı.</p>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="./wp-content/uploads/elazig-01.jpg" alt="Elazığ Kent Meydanı" />
-          <div class="project-body">
-            <div class="badges">
-              <span class="badge" data-i18n="badgeConsulting">Danışmanlık</span>
-              <span class="badge" data-i18n="badgeUrban">Kentsel Tasarım</span>
-            </div>
-            <h3 data-i18n="projectElazigTitle">Elazığ Kent Meydanı</h3>
-            <p data-i18n="projectElazigDesc">Birincilik ödüllü yarışma projesinde şehir içi ulaşım kurgusu ve raporu.</p>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="./wp-content/uploads/ibb-01.jpg" alt="İstanbul Geneli Cadde Meydan" />
-          <div class="project-body">
-            <div class="badges">
-              <span class="badge" data-i18n="badgeUrban">Kentsel Tasarım</span>
-              <span class="badge" data-i18n="badgeRoads">Yol Projeleri</span>
-            </div>
-            <h3 data-i18n="projectIbbTitle">İstanbul Geneli Cadde &amp; Meydan</h3>
-            <p data-i18n="projectIbbDesc">40'tan fazla cadde ve meydanda uygulama projeleri, UTK süreçleri ve danışmanlık.</p>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="./wp-content/uploads/koy-03.png" alt="Zekeriyaköy KÖY Projesi" />
-          <div class="project-body">
-            <div class="badges">
-              <span class="badge" data-i18n="badgeConsulting">Danışmanlık</span>
-              <span class="badge" data-i18n="badgeUrban">Kentsel Tasarım</span>
-              <span class="badge" data-i18n="badgeRoads">Yol Projeleri</span>
-            </div>
-            <h3 data-i18n="projectKoyTitle">Zekeriyaköy KÖY</h3>
-            <p data-i18n="projectKoyDesc">467 bin m² yerleşimde yol planlaması, ağaç röleveleri ve otopark optimizasyonu.</p>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="./wp-content/uploads/desb-02.jpg" alt="Deliklikaya Sanayi Bölgesi" />
-          <div class="project-body">
-            <div class="badges">
-              <span class="badge" data-i18n="badgeIndustry">Sanayi Alanları</span>
-              <span class="badge" data-i18n="badgeEarthworks">Toprak İşleri</span>
-              <span class="badge" data-i18n="badgeRoads">Yol Projeleri</span>
-            </div>
-            <h3 data-i18n="projectDesbTitle">Deliklikaya Sanayi Bölgesi</h3>
-            <p data-i18n="projectDesbDesc">2,6 milyon m²’lik sahada toprak işleri optimizasyonu ve yol uygulama projeleri.</p>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="./wp-content/uploads/manisaeah-01.jpg" alt="Manisa E.A. Hastanesi" />
-          <div class="project-body">
-            <div class="badges">
-              <span class="badge" data-i18n="badgeConsulting">Danışmanlık</span>
-              <span class="badge" data-i18n="badgeRoads">Yol Projeleri</span>
-            </div>
-            <h3 data-i18n="projectManisaTitle">Manisa E.A. Hastanesi</h3>
-            <p data-i18n="projectManisaDesc">Şehir hastanesi erişim planlaması, ulaşım raporu ve otopark senaryoları.</p>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="./wp-content/uploads/igtod-01.jpg" alt="Resneli Gıda Toptancıları Sitesi" />
-          <div class="project-body">
-            <div class="badges">
-              <span class="badge" data-i18n="badgeEarthworks">Toprak İşleri</span>
-              <span class="badge" data-i18n="badgeRoads">Yol Projeleri</span>
-            </div>
-            <h3 data-i18n="projectIgtodTitle">Resneli Gıda Toptancıları Sitesi</h3>
-            <p data-i18n="projectIgtodDesc">400 bin m²’lik lojistik alanında etap etap yol ve toprak işleri tasarımı.</p>
-          </div>
-        </article>
-      </div>
-      <div class="portfolio-cta">
-        <a class="btn primary" href="./Portfolio/idearc-tr.pdf" target="_blank" rel="noopener" data-i18n="ctaPortfolioTr">Portföy (TR)</a>
-        <a class="btn primary" href="./Portfolio/idearc-en.pdf" target="_blank" rel="noopener" data-i18n="ctaPortfolioEn">Portfolio (EN)</a>
-        <a class="btn secondary" href="./Portfolio" target="_blank" rel="noopener" data-i18n="ctaPdfArchive">PDF arşivini aç</a>
-        <a class="btn secondary" href="./portfolio" target="_blank" rel="noopener" data-i18n="ctaAllProjects">Tüm projeler</a>
       </div>
     </div>
   </section>
@@ -241,131 +148,47 @@
         <p data-i18n="referencesLead">Tüpraş’tan belediyelere, OSB’lerden özel geliştiricilere kadar geniş bir referans listesi.</p>
       </div>
       <div class="logos-grid" aria-label="Referans logoları">
-        <a href="https://www.tupras.com.tr" target="_blank" rel="noopener" aria-label="Tüpraş">
+        <a class="logo-square" href="https://www.tupras.com.tr" target="_blank" rel="noopener" aria-label="Tüpraş">
           <img src="./wp-content/uploads/TUPRAS.jpg" alt="Tüpraş" />
         </a>
-        <a href="https://www.ronesans.com" target="_blank" rel="noopener" aria-label="Rönesans">
+        <a class="logo-square" href="https://www.ronesans.com" target="_blank" rel="noopener" aria-label="Rönesans">
           <img src="./wp-content/uploads/RONESANS.jpg" alt="Rönesans" />
         </a>
-        <a href="https://www.aspaeng.com" target="_blank" rel="noopener" aria-label="Aspa Engineering">
+        <a class="logo-square" href="https://www.aspaeng.com" target="_blank" rel="noopener" aria-label="Aspa Engineering">
           <img src="./wp-content/uploads/ASPA.jpg" alt="Aspa" />
         </a>
-        <a href="https://www.tararesources.com" target="_blank" rel="noopener" aria-label="Tara Resources">
+        <a class="logo-square" href="https://www.tararesources.com" target="_blank" rel="noopener" aria-label="Tara Resources">
           <img src="./wp-content/uploads/TARARESOURCES.jpg" alt="Tara Resources" />
         </a>
-        <a href="https://www.umraniye.bel.tr" target="_blank" rel="noopener" aria-label="Ümraniye Belediyesi">
+        <a class="logo-square" href="https://www.umraniye.bel.tr" target="_blank" rel="noopener" aria-label="Ümraniye Belediyesi">
           <img src="./wp-content/uploads/UMRANIYE.jpg" alt="Ümraniye Belediyesi" />
         </a>
-        <a href="https://tersaneistanbul.com" target="_blank" rel="noopener" aria-label="Tersane İstanbul">
+        <a class="logo-square" href="https://tersaneistanbul.com" target="_blank" rel="noopener" aria-label="Tersane İstanbul">
           <img src="./wp-content/uploads/TERSANEISTANBUL.jpg" alt="Tersane İstanbul" />
         </a>
-        <a href="https://www.ibb.istanbul" target="_blank" rel="noopener" aria-label="İstanbul Büyükşehir Belediyesi">
+        <a class="logo-square" href="https://www.ibb.istanbul" target="_blank" rel="noopener" aria-label="İstanbul Büyükşehir Belediyesi">
           <img src="./wp-content/uploads/IBB.jpg" alt="İBB" />
         </a>
-        <a href="https://www.kucukcekmece.istanbul" target="_blank" rel="noopener" aria-label="Küçükçekmece Belediyesi">
+        <a class="logo-square" href="https://www.kucukcekmece.istanbul" target="_blank" rel="noopener" aria-label="Küçükçekmece Belediyesi">
           <img src="./wp-content/uploads/KUCUKCEKMECE.jpg" alt="Küçükçekmece Belediyesi" />
         </a>
-        <a href="https://www.siyahkalem.com.tr" target="_blank" rel="noopener" aria-label="Siyahkalem">
-          <img src="./wp-content/uploads/SIYAHKALEM.jpg" alt="Siyahkalem" />
+        <a class="logo-square" href="http://www.cevahir.com.tr/" target="_blank" rel="noopener" aria-label="Cevahir">
+          <img src="./images/CEVAHIR-LOGO-TAAH.png" alt="Cevahir" />
         </a>
-        <a href="https://www.sisli.bel.tr" target="_blank" rel="noopener" aria-label="Şişli Belediyesi">
+        <a class="logo-square" href="https://www.sisli.bel.tr" target="_blank" rel="noopener" aria-label="Şişli Belediyesi">
           <img src="./wp-content/uploads/SISLIBEL.jpg" alt="Şişli Belediyesi" />
         </a>
-        <a href="https://www.sekay.com.tr" target="_blank" rel="noopener" aria-label="Sekay">
+        <a class="logo-square" href="https://www.sekay.com.tr" target="_blank" rel="noopener" aria-label="Sekay">
           <img src="./wp-content/uploads/SEKAY.jpg" alt="Sekay" />
         </a>
-        <a href="https://www.emlakkonut.com.tr" target="_blank" rel="noopener" aria-label="Emlak Konut GYO">
+        <a class="logo-square" href="https://ica-isletme.com/" target="_blank" rel="noopener" aria-label="ICA">
+          <img src="./images/ICA2.jpg" alt="ICA" />
+        </a>
+        <a class="logo-square" href="https://www.emlakkonut.com.tr" target="_blank" rel="noopener" aria-label="Emlak Konut GYO">
           <img src="./wp-content/uploads/EMLAKKONUTGYO.jpg" alt="Emlak Konut GYO" />
         </a>
+        <div class="logo-square more-references">+130</div>
       </div>
-    </div>
-  </section>
-
-  <section id="uzmanliklar" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 data-i18n="expertiseTitle">Uzmanlık alanlarımız</h2>
-        <p data-i18n="expertiseLead">Ulaştırma, altyapı ve sivil mühendislik disiplinlerini tek çatı altında topluyoruz.</p>
-      </div>
-      <div class="expertise-grid">
-        <article class="expertise-card">
-          <h3 data-i18n="expertiseRoadsTitle">Yol Tasarımı &amp; BIM</h3>
-          <p data-i18n="expertiseRoadsDesc">Otoyol, bulvar ve bağlantı yollarını BIM süreçleriyle tasarlıyor, revizyonları dijital olarak izliyoruz.</p>
-        </article>
-        <article class="expertise-card">
-          <h3 data-i18n="expertiseEarthTitle">Toprak İşleri</h3>
-          <p data-i18n="expertiseEarthDesc">Havalimanı, OSB ve lojistik sahaları için hızlı keşif, maliyet ve optimizasyon raporları.</p>
-        </article>
-        <article class="expertise-card">
-          <h3 data-i18n="expertiseUtkTitle">UTK / UKOME</h3>
-          <p data-i18n="expertiseUtkDesc">Geçici sirkülasyon, otopark ve karma kullanım projeleri için karar dosyaları hazırlıyoruz.</p>
-        </article>
-        <article class="expertise-card">
-          <h3 data-i18n="expertiseCivilTitle">Sivil Mühendislik</h3>
-          <p data-i18n="expertiseCivilDesc">Vaziyet planı, ulaşım planlaması, yağmur/atıksu ağları ve dere ıslahları için uçtan uca danışmanlık.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="iletisim" class="section">
-    <div class="container contact-grid">
-      <article class="contact-card">
-        <h2 data-i18n="contactTitle">Bize ulaşın</h2>
-        <p data-i18n="contactLead">Fikirleriniz bizim için önemli. 1–2 iş günü içinde dönüş sağlıyoruz.</p>
-        <ul class="contact-list">
-          <li>
-            <strong data-i18n="contactPhoneLabel">Telefon</strong>
-            <span data-i18n="contactPhoneValue">+90 212 823 1234</span>
-          </li>
-          <li>
-            <strong data-i18n="contactEmailLabel">E-posta</strong>
-            <span><a href="mailto:info@idearc.com.tr" data-i18n="contactEmailValue">info@idearc.com.tr</a></span>
-          </li>
-          <li>
-            <strong data-i18n="contactAddressLabel">Adres</strong>
-            <span data-i18n="contactAddressValue">Merkez Mah. Abide-i Hürriyet Cd. No:211/C Bolkan Center K:3 D:96, Şişli / İstanbul</span>
-          </li>
-          <li>
-            <strong data-i18n="contactHoursLabel">Çalışma saatleri</strong>
-            <span data-i18n="contactHoursValue">Pzt–Cum, 09:00–18:00 (GMT+3)</span>
-          </li>
-        </ul>
-        <div class="map-wrapper" style="margin-top:24px;">
-          <iframe
-            title="IDEArc haritası"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.1900702617113!2d28.984537176686334!3d41.06483777134256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7c36d496d21%3A0xa5960f7a96d127ba!2zSURFQXJjIFVsdXNsYXJhcmFzxLEgTcO8aGVuZGlzbGlrIHZlIE3DvMWfYXZpcmxpayBMVEQuxZ5UxLAu!5e0!3m2!1str!2str!4v1763295630635!5m2!1str!2str&z=13"
-          ></iframe>
-        </div>
-      </article>
-      <article class="form-card">
-        <h2 data-i18n="formTitle">Mesaj gönderin</h2>
-        <form id="contactForm" novalidate>
-          <label>
-            <span data-i18n="formNameLabel">Adınız Soyadınız*</span>
-            <input type="text" name="name" required placeholder="Adınız" data-i18n-placeholder="formNamePlaceholder" />
-          </label>
-          <label>
-            <span data-i18n="formEmailLabel">E-posta*</span>
-            <input type="email" name="email" required placeholder="ornek@firma.com" data-i18n-placeholder="formEmailPlaceholder" />
-          </label>
-          <label>
-            <span data-i18n="formSubjectLabel">Konu</span>
-            <input type="text" name="subject" placeholder="Proje / ihtiyaç" data-i18n-placeholder="formSubjectPlaceholder" />
-          </label>
-          <label>
-            <span data-i18n="formMessageLabel">Mesaj*</span>
-            <textarea name="message" required placeholder="Kısa proje tarifi, teslim tarihi, dosyalar..." data-i18n-placeholder="formMessagePlaceholder"></textarea>
-          </label>
-          <div style="display:flex; flex-wrap:wrap; gap:12px;">
-            <button class="btn primary" type="submit" data-i18n="formSendBtn">E-posta gönder</button>
-            <button class="btn secondary" type="button" data-copy data-i18n="formCopyBtn">Mesajı kopyala</button>
-          </div>
-          <p class="status" id="formStatus"></p>
-        </form>
-      </article>
     </div>
   </section>
 
@@ -374,8 +197,10 @@
       <p data-i18n="footerNote">© IDEArc Uluslararası Mühendislik ve Müşavirlik Ltd. Şti. – 2025</p>
       <nav aria-label="Alt menü">
         <a href="#anasayfa" data-scroll data-i18n="navHome">Anasayfa</a>
-        <a href="#portfoy" data-scroll data-i18n="navPortfolio">Portföy</a>
-        <a href="#iletisim" data-scroll data-i18n="navContact">İletişim</a>
+        <a href="./hakkinda.html" data-i18n="navAbout">Hakkında</a>
+        <a href="./portfoy.html" data-i18n="navPortfolio">Portföy</a>
+        <a href="./uzmanliklar.html" data-i18n="navExpertise">Uzmanlıklar</a>
+        <a href="./iletisim.html" data-i18n="navContact">İletişim</a>
       </nav>
     </div>
   </footer>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-label="ICA">
+  <rect width="240" height="80" rx="14" fill="#111111"/>
+  <path d="M40 58h160" stroke="#f4c542" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  <text x="120" y="50" text-anchor="middle" font-size="36" font-family="Montserrat, 'Segoe UI', sans-serif" font-weight="700" fill="#f5f7fb">ICA</text>
+</svg>
