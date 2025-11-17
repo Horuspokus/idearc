@@ -318,6 +318,46 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.02);
 }
 
+.mission-quote {
+  margin-top: 16px;
+  font-style: italic;
+  color: var(--muted);
+  border-left: 3px solid var(--accent);
+  padding-left: 14px;
+}
+
+.word-cloud {
+  margin-top: 18px;
+  position: relative;
+  min-height: 360px;
+  padding: 12px;
+}
+
+.word-cloud .word {
+  position: absolute;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  transition: color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  font-size: calc(0.85rem * var(--size, 1));
+  left: calc(var(--x, 50) * 1%);
+  top: calc(var(--y, 50) * 1%);
+  transform: translate(-50%, -50%) rotate(var(--rotate, 0deg));
+}
+
+.word-cloud .word:hover {
+  transform: translate(-50%, -50%) rotate(var(--rotate, 0deg)) scale(1.05);
+}
+
+.word-cloud .word.highlight {
+  color: #ff5a5a;
+}
+
+.word-cloud .word.size-sm {
+  opacity: 0.85;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -546,6 +586,13 @@ textarea {
 .human-check input {
   width: auto;
   accent-color: var(--accent);
+}
+
+.robot-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.04em;
 }
 
 .map-wrapper iframe {
