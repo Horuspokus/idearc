@@ -126,9 +126,14 @@
             <p data-i18n="aboutWhyDesc">Multidisipliner ekip, hızlı teslim, optimize edilmiş maliyetler ve maksimum sürdürülebilirlik için veri odaklı süreçleri tek çatı altında topluyoruz.</p>
           </article>
           <article class="about-card word-cloud-card">
-            <div class="word-cloud">
-              <img src="./media/wordcloud.svg" alt="IDEArc kelime bulutu" loading="lazy" />
+            <div class="word-cloud-header">
+              <div>
+                <h3 data-i18n="aboutWordCloudTitle">Kelime bulutu</h3>
+                <p class="word-cloud-lead" data-i18n="aboutWordCloudDesc">IDEArc topluluğunun sıklıkla kullandığı etiketler.</p>
+              </div>
+              <button class="btn secondary" type="button" data-word-cloud-reshuffle data-i18n="aboutWordCloudShuffle">Yenile</button>
             </div>
+            <div class="word-cloud" id="aboutWordCloud" role="list" aria-live="polite"></div>
           </article>
         </div>
       </div>
