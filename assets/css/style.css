@@ -328,34 +328,16 @@ nav a:hover {
 
 .word-cloud {
   margin-top: 18px;
-  position: relative;
-  min-height: 360px;
-  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow: hidden;
 }
 
-.word-cloud .word {
-  position: absolute;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--text);
-  transition: color 0.2s ease, transform 0.2s ease;
-  white-space: nowrap;
-  font-size: calc(0.85rem * var(--size, 1));
-  left: calc(var(--x, 50) * 1%);
-  top: calc(var(--y, 50) * 1%);
-  transform: translate(-50%, -50%) rotate(var(--rotate, 0deg));
-}
-
-.word-cloud .word:hover {
-  transform: translate(-50%, -50%) rotate(var(--rotate, 0deg)) scale(1.05);
-}
-
-.word-cloud .word.highlight {
-  color: #ff5a5a;
-}
-
-.word-cloud .word.size-sm {
-  opacity: 0.85;
+.word-cloud img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .portfolio-grid {
