@@ -24,6 +24,12 @@ body {
               var(--bg);
   color: var(--text);
   line-height: 1.6;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 body[dir="rtl"] {
@@ -332,29 +338,12 @@ nav a:hover {
   gap: 16px;
 }
 
-.word-cloud-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.word-cloud-lead {
-  margin: 6px 0 0;
-  color: var(--muted);
-}
-
-.word-cloud-redraw {
-  white-space: nowrap;
-}
-
 .word-cloud-html {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--card);
   padding: 18px;
-  min-height: 260px;
+  min-height: 220px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -367,6 +356,7 @@ nav a:hover {
   font-weight: 600;
   transition: text-shadow 1s ease, opacity 1s ease;
   cursor: pointer;
+  line-height: 1.2;
 }
 
 .word-cloud-html span:hover,
@@ -376,25 +366,9 @@ nav a:hover {
 }
 
 @media (max-width: 640px) {
-  .word-cloud-header {
-    flex-direction: column;
-  }
-
   .word-cloud-html {
     min-height: 220px;
   }
-}
-
-.awards-emblem {
-  width: 96px;
-  margin: 0 auto 16px;
-}
-
-.awards-emblem img {
-  display: block;
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 8px 20px rgba(246, 194, 67, 0.25));
 }
 
 .awards-grid {
@@ -411,7 +385,7 @@ nav a:hover {
   padding: 20px;
   display: flex;
   gap: 18px;
-  align-items: flex-start;
+  align-items: stretch;
   position: relative;
   overflow: hidden;
 }
@@ -430,6 +404,37 @@ nav a:hover {
   color: var(--accent);
   line-height: 1;
   min-width: 44px;
+}
+
+.award-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.award-badge {
+  width: 72px;
+  height: 72px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.award-wreath {
+  width: 100%;
+  height: 100%;
+  color: #f6c243;
+  filter: drop-shadow(0 8px 22px rgba(246, 194, 67, 0.25));
+}
+
+.award-wreath use {
+  fill: none;
+  stroke: currentColor;
+}
+
+.award-wreath text {
+  font-family: 'Roboto Slab', 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .award-content h3 {
