@@ -23,34 +23,60 @@ function shuffleWords(words) {
   return items;
 }
 
-function createWordElement(word, maxWeight) {
-  const span = document.createElement('span');
-  const size = 0.95 + (word.weight / maxWeight) * 1.4;
-  const tilt = (Math.random() * 6 - 3).toFixed(2);
-  const hue = 355 + Math.random() * 10;
-  const saturation = 82 + Math.random() * 8;
-  const lightness = 60 + Math.random() * 6;
-
-  span.className = 'word-cloud-word';
-  span.textContent = word.label;
-  span.style.setProperty('--wc-size', `${size.toFixed(2)}rem`);
-  span.style.setProperty('--wc-tilt', `${tilt}deg`);
-  span.style.background = `linear-gradient(120deg, hsla(${hue}, ${saturation}%, ${lightness}%, 0.08), hsla(${hue}, ${saturation}%, ${lightness}%, 0.02))`;
-  span.style.borderColor = `hsla(${hue}, ${saturation}%, ${lightness}%, 0.18)`;
-  span.setAttribute('role', 'listitem');
-  span.setAttribute('aria-label', word.label);
-
-  return span;
+function hashString(value) {
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash << 5) - hash + value.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
 }
 
-function renderWordCloud(container) {
-  const maxWeight = Math.max(...CLOUD_WORDS.map((word) => word.weight));
-  const shuffled = shuffleWords(CLOUD_WORDS);
+function getWordColor(word, maxWeight) {
+  const weightRatio = word.weight / maxWeight;
+  const baseHue = 350 + (hashString(word.label) % 20);
+  const saturation = 70 + weightRatio * 20;
+  const lightness = 48 + weightRatio * 16;
+  return `hsl(${baseHue}, ${saturation}%, ${lightness}%)`;
+}
+
+
+function renderHtmlCloud(container, words, onWordClick) {
+  const fragment = document.createDocumentFragment();
+  const maxWeight = Math.max(...words.map((word) => word.weight));
 
   container.innerHTML = '';
-  shuffled.forEach((word) => {
-    container.appendChild(createWordElement(word, maxWeight));
+  words.forEach((word) => {
+    const span = document.createElement('span');
+    const size = 0.95 + (word.weight / maxWeight) * 1.2;
+    span.textContent = word.label;
+    span.style.fontSize = `${size.toFixed(2)}rem`;
+    span.style.color = getWordColor(word, maxWeight);
+    span.setAttribute('role', 'listitem');
+    span.setAttribute('aria-label', word.label);
+    span.tabIndex = 0;
+
+    const triggerClick = () => onWordClick(word);
+    span.addEventListener('click', triggerClick);
+    span.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        triggerClick();
+      }
+    });
+
+    fragment.appendChild(span);
   });
+
+  container.appendChild(fragment);
+}
+
+function showWordInfo(word) {
+  if (!word) {
+    return;
+  }
+  const count = typeof word.weight === 'number' ? word.weight : word.count;
+  window.alert(`${word.label}: ${count}`);
 }
 
 export function initWordCloud() {
@@ -59,17 +85,19 @@ export function initWordCloud() {
     return;
   }
 
-  const container = document.getElementById('aboutWordCloud');
-  if (!container) {
+  const htmlCloud = document.getElementById('wordCloudHtml');
+  const redrawButton = document.getElementById('wordCloudRedraw');
+
+  if (!htmlCloud || !redrawButton) {
     return;
   }
 
-  const shuffleButton = document.querySelector('[data-word-cloud-reshuffle]');
-  const refreshCloud = () => renderWordCloud(container);
+  const render = () => {
+    const words = shuffleWords(CLOUD_WORDS);
+    renderHtmlCloud(htmlCloud, words, showWordInfo);
+  };
 
-  refreshCloud();
+  redrawButton.addEventListener('click', render);
 
-  if (shuffleButton) {
-    shuffleButton.addEventListener('click', refreshCloud);
-  }
+  render();
 }

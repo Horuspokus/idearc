@@ -41,7 +41,7 @@
   }
   </script>
 </head>
-<body data-page="about" data-home="index.html">
+<body data-page="awards" data-home="index.html">
   <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
     <symbol id="icon-ln" viewBox="0 0 24 24">
       <rect x="2.5" y="2.5" width="19" height="19" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.5" />
@@ -77,9 +77,9 @@
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" data-i18n="menuLabel">Menü</button>
       <nav id="primaryNav" aria-label="Ana menü">
         <a href="#anasayfa" data-scroll data-i18n="navHome">Anasayfa</a>
-        <a href="./hakkinda.html" class="active" data-i18n="navAbout">Hakkında</a>
+        <a href="./hakkinda.html" data-i18n="navAbout">Hakkında</a>
         <a href="./portfoy.html" data-i18n="navPortfolio">Portföy</a>
-        <a href="./oduller.html" data-i18n="navAwards">Ödüller</a>
+        <a href="./oduller.html" class="active" data-i18n="navAwards">Ödüller</a>
         <a href="./uzmanliklar.html" data-i18n="navExpertise">Uzmanlıklar</a>
         <a href="./iletisim.html" data-i18n="navContact">İletişim</a>
       </nav>
@@ -110,31 +110,57 @@
   </header>
 
   <main>
-    <section id="hakkinda" class="section">
+    <section id="oduller" class="section">
       <div class="container">
         <div class="section-header">
-          <h2 data-i18n="aboutTitle">IDEArc hakkında</h2>
-          <p data-i18n="aboutLead">IDEArc Uluslararası Mühendislik ve Müşavirlik Şirketi 2015 yılında, klasik karayolu mühendisliğinin ötesine geçip BIM ve sivil mühendislik alanlarında uzmanlaşmak amacıyla kuruldu.</p>
+          <div class="awards-emblem" aria-hidden="true">
+            <img src="./assets/icons/rome-crown.svg" alt="" />
+          </div>
+          <h2 data-i18n="awardsTitle">Ödüllerimiz</h2>
+          <p data-i18n="awardsLead">Ulaşım planlama ve trafik danışmanlığındaki projelerimize verilen ödüllerden seçmeler.</p>
         </div>
-        <div class="about-wrapper">
-          <article class="about-card">
-            <h3 data-i18n="aboutMissionTitle">Misyonumuz</h3>
-            <p data-i18n="aboutMissionDesc">Altyapı ve üstyapı projelerini mühendislik hassasiyetinde, dijital ikiz yaklaşımıyla geleceğe taşıyan çözümler geliştirmek.</p>
-            <p class="mission-quote">Büyük ölçekli projerlerde insanları değil, makineleri koştururuz.</p>
+        <div class="awards-grid" role="list">
+          <article class="award-card" role="listitem">
+            <span class="award-count" aria-hidden="true">01</span>
+            <div class="award-content">
+              <h3 data-i18n="awardTaksimTitle">Taksim Meydanı Kentsel Tasarım Yarışması</h3>
+              <p class="award-summary" data-i18n="awardTaksimSummary">Birincilik ödülü – Ulaşım planlama ve trafik danışmanlığı</p>
+            </div>
           </article>
-          <article class="about-card">
-            <h3 data-i18n="aboutWhyTitle">Neden IDEArc?</h3>
-            <p data-i18n="aboutWhyDesc">Multidisipliner ekip, hızlı teslim, optimize edilmiş maliyetler ve maksimum sürdürülebilirlik için veri odaklı süreçleri tek çatı altında topluyoruz.</p>
+          <article class="award-card" role="listitem">
+            <span class="award-count" aria-hidden="true">02</span>
+            <div class="award-content">
+              <h3 data-i18n="awardIzmirTitle">İzmir Büyükşehir Belediyesi Ana Transfer Merkezi Mimari Proje Yarışması</h3>
+              <p class="award-summary" data-i18n="awardIzmirSummary">Üçüncülük ödülü – Ulaşım planlama ve trafik danışmanlığı</p>
+            </div>
           </article>
-          <article class="about-card word-cloud-card">
-            <header class="word-cloud-header">
-              <div>
-                <h3 data-i18n="aboutWordCloudTitle">Kelime bulutu</h3>
-                <p class="word-cloud-lead" data-i18n="aboutWordCloudDesc">IDEArc topluluğunun sıklıkla kullandığı etiketler.</p>
-              </div>
-              <button class="btn secondary word-cloud-redraw" type="button" id="wordCloudRedraw" data-i18n="aboutWordCloudShuffle">Yenile</button>
-            </header>
-            <div id="wordCloudHtml" class="word-cloud-html" role="list" aria-live="polite"></div>
+          <article class="award-card" role="listitem">
+            <span class="award-count" aria-hidden="true">03</span>
+            <div class="award-content">
+              <h3 data-i18n="awardKadikoyTitle">Kadıköy Meydanı Kentsel Tasarım Yarışması</h3>
+              <p class="award-summary" data-i18n="awardKadikoySummary">Üçüncü mansiyon – Ulaşım planlama ve trafik danışmanlığı</p>
+            </div>
+          </article>
+          <article class="award-card" role="listitem">
+            <span class="award-count" aria-hidden="true">04</span>
+            <div class="award-content">
+              <h3 data-i18n="awardBuffaloTitle">Aim for the Sky: Buffalo Skyway Corridor Competition</h3>
+              <p class="award-summary" data-i18n="awardBuffaloSummary">United States of America · Kısa liste – Ulaşım planlama ve trafik danışmanlığı</p>
+            </div>
+          </article>
+          <article class="award-card" role="listitem">
+            <span class="award-count" aria-hidden="true">05</span>
+            <div class="award-content">
+              <h3 data-i18n="awardElazigTitle">Elazığ Kent Meydanı Kentsel Tasarım Yarışması</h3>
+              <p class="award-summary" data-i18n="awardElazigSummary">Birincilik ödülü – Ulaşım planlama ve trafik danışmanlığı</p>
+            </div>
+          </article>
+          <article class="award-card" role="listitem">
+            <span class="award-count" aria-hidden="true">06</span>
+            <div class="award-content">
+              <h3 data-i18n="awardMakkahTitle">Mekke – Rua Al Haram</h3>
+              <p class="award-summary" data-i18n="awardMakkahSummary">İkincilik ödülü – Ulaşım planlama ve trafik danışmanlığı</p>
+            </div>
           </article>
         </div>
       </div>
@@ -148,7 +174,7 @@
         <a href="#anasayfa" data-scroll data-i18n="navHome">Anasayfa</a>
         <a href="./hakkinda.html" data-i18n="navAbout">Hakkında</a>
         <a href="./portfoy.html" data-i18n="navPortfolio">Portföy</a>
-        <a href="./oduller.html" data-i18n="navAwards">Ödüller</a>
+        <a href="./oduller.html" class="active" data-i18n="navAwards">Ödüller</a>
         <a href="./uzmanliklar.html" data-i18n="navExpertise">Uzmanlıklar</a>
         <a href="./iletisim.html" data-i18n="navContact">İletişim</a>
       </nav>
