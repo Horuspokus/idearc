@@ -262,16 +262,38 @@ nav a:hover {
   align-items: center;
   gap: 12px;
   color: var(--text);
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 }
 
 .btn.primary {
+  border: 1px solid transparent;
+  color: var(--text);
   background: linear-gradient(120deg, var(--accent), var(--accent-alt));
 }
 
 .btn.secondary {
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent);
   color: var(--muted);
   background: transparent;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.btn.primary:hover,
+.btn.primary:focus-visible {
+  color: var(--text);
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.btn.secondary:hover,
+.btn.secondary:focus-visible {
+  color: var(--text);
+  border-color: var(--accent);
 }
 
 .section {
