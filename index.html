@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="metaTitle">IDEArc – Infrastructure Design Engineering & Architecture</title>
-  <meta name="description" content="IDEArc, 2015'ten bu yana altyapı tasarımı, BIM, yol projeleri ve büyük ölçekli danışmanlık hizmetleri sunan mühendislik ve müşavirlik şirketidir." data-i18n-meta="metaDescription" />
+  <title data-i18n="metaTitleHome">IDEArc – Infrastructure Design Engineering & Architecture</title>
+  <meta name="description" content="IDEArc, 2015'ten bu yana altyapı tasarımı, BIM, yol projeleri ve büyük ölçekli danışmanlık hizmetleri sunan mühendislik ve müşavirlik şirketidir." data-i18n-meta="metaDescriptionHome" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@400;600&family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
@@ -75,9 +75,9 @@
         <img src="./media/IDEArc_white.png" alt="IDEArc" />
         <span class="sr-only" data-i18n="brandName">IDEArc</span>
       </a>
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" data-i18n="menuLabel">Menü</button>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primaryNav" data-i18n="menuLabel">Menü</button>
       <nav id="primaryNav" aria-label="Ana menü">
-        <a href="#anasayfa" data-scroll class="active" data-i18n="navHome">Anasayfa</a>
+        <a href="#anasayfa" data-scroll class="active" aria-current="page" data-i18n="navHome">Anasayfa</a>
         <a href="./hakkinda.html" data-i18n="navAbout">Hakkında</a>
         <a href="./portfoy.html" data-i18n="navPortfolio">Portföy</a>
         <a href="./oduller.html" data-i18n="navAwards">Ödüller</a>
@@ -85,10 +85,10 @@
         <a href="./iletisim.html" data-i18n="navContact">İletişim</a>
       </nav>
       <div class="lang-toggle" role="group" aria-label="Language switcher">
-        <button class="lang-btn active" data-lang-btn data-lang="tr">TR</button>
-        <button class="lang-btn" data-lang-btn data-lang="en">EN</button>
-        <button class="lang-btn" data-lang-btn data-lang="bg">BG</button>
-        <button class="lang-btn" data-lang-btn data-lang="ar">AR</button>
+        <button class="lang-btn active" aria-pressed="true" data-lang-btn data-lang="tr">TR</button>
+        <button class="lang-btn" aria-pressed="false" data-lang-btn data-lang="en">EN</button>
+        <button class="lang-btn" aria-pressed="false" data-lang-btn data-lang="bg">BG</button>
+        <button class="lang-btn" aria-pressed="false" data-lang-btn data-lang="ar">AR</button>
       </div>
       <div class="socials" aria-label="Sosyal medya">
         <a href="https://www.linkedin.com/company/idearccomtr" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -110,8 +110,8 @@
     </div>
   </header>
 
-  <section class="hero" aria-label="IDEArc hero">
-    <video autoplay muted loop playsinline poster="./media/idearcHeroNew-poster.jpg">
+  <section class="hero" aria-label="IDEArc hero" style="--hero-poster: url('./media/idearcHeroNew-poster.jpg');">
+    <video autoplay muted loop playsinline poster="./media/idearcHeroNew-poster.jpg" data-hero-video>
       <source src="./media/idearcHeroNew.mp4" type="video/mp4" />
     </video>
     <div class="hero-content container">
@@ -178,43 +178,43 @@
       </div>
       <div class="logos-grid" aria-label="Referans logoları">
         <a class="logo-square" href="https://www.tupras.com.tr" target="_blank" rel="noopener" aria-label="Tüpraş">
-          <img src="./media/uploads/TUPRAS.jpg" alt="Tüpraş" />
+          <img src="./media/uploads/TUPRAS.jpg" alt="Tüpraş" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="https://www.ronesans.com" target="_blank" rel="noopener" aria-label="Rönesans">
-          <img src="./media/uploads/RONESANS.jpg" alt="Rönesans" />
+          <img src="./media/uploads/RONESANS.jpg" alt="Rönesans" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="https://www.aspaeng.com" target="_blank" rel="noopener" aria-label="Aspa Engineering">
-          <img src="./media/uploads/ASPA.jpg" alt="Aspa" />
+          <img src="./media/uploads/ASPA.jpg" alt="Aspa" loading="lazy" decoding="async" width="195" height="200" />
         </a>
         <a class="logo-square" href="https://www.tararesources.com" target="_blank" rel="noopener" aria-label="Tara Resources">
-          <img src="./media/uploads/TARARESOURCES.jpg" alt="Tara Resources" />
+          <img src="./media/uploads/TARARESOURCES.jpg" alt="Tara Resources" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="https://www.umraniye.bel.tr" target="_blank" rel="noopener" aria-label="Ümraniye Belediyesi">
-          <img src="./media/uploads/UMRANIYE.jpg" alt="Ümraniye Belediyesi" />
+          <img src="./media/uploads/UMRANIYE.jpg" alt="Ümraniye Belediyesi" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="https://tersaneistanbul.com" target="_blank" rel="noopener" aria-label="Tersane İstanbul">
-          <img src="./media/uploads/TERSANEISTANBUL.jpg" alt="Tersane İstanbul" />
+          <img src="./media/uploads/TERSANEISTANBUL.jpg" alt="Tersane İstanbul" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="https://www.ibb.istanbul" target="_blank" rel="noopener" aria-label="İstanbul Büyükşehir Belediyesi">
-          <img src="./media/uploads/IBB.jpg" alt="İBB" />
+          <img src="./media/uploads/IBB.jpg" alt="İBB" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="https://www.kucukcekmece.istanbul" target="_blank" rel="noopener" aria-label="Küçükçekmece Belediyesi">
-          <img src="./media/uploads/KUCUKCEKMECE.jpg" alt="Küçükçekmece Belediyesi" />
+          <img src="./media/uploads/KUCUKCEKMECE.jpg" alt="Küçükçekmece Belediyesi" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="http://www.cevahir.com.tr/" target="_blank" rel="noopener" aria-label="Cevahir">
-          <img src="./media/CEVAHIR-LOGO-TAAH.png" alt="Cevahir" />
+          <img src="./media/CEVAHIR-LOGO-TAAH.png" alt="Cevahir" loading="lazy" decoding="async" width="1024" height="508" />
         </a>
         <a class="logo-square" href="https://www.sisli.bel.tr" target="_blank" rel="noopener" aria-label="Şişli Belediyesi">
-          <img src="./media/uploads/SISLIBEL.jpg" alt="Şişli Belediyesi" />
+          <img src="./media/uploads/SISLIBEL.jpg" alt="Şişli Belediyesi" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="https://www.sekay.com.tr" target="_blank" rel="noopener" aria-label="Sekay">
-          <img src="./media/uploads/SEKAY.jpg" alt="Sekay" />
+          <img src="./media/uploads/SEKAY.jpg" alt="Sekay" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <a class="logo-square" href="https://ica-isletme.com/" target="_blank" rel="noopener" aria-label="ICA">
-          <img src="./media/ICA2.jpg" alt="ICA" />
+          <img src="./media/ICA2.jpg" alt="ICA" loading="lazy" decoding="async" width="2389" height="1237" />
         </a>
         <a class="logo-square" href="https://www.emlakkonut.com.tr" target="_blank" rel="noopener" aria-label="Emlak Konut GYO">
-          <img src="./media/uploads/EMLAKKONUTGYO.jpg" alt="Emlak Konut GYO" />
+          <img src="./media/uploads/EMLAKKONUTGYO.jpg" alt="Emlak Konut GYO" loading="lazy" decoding="async" width="200" height="200" />
         </a>
         <div class="logo-square more-references">+130</div>
       </div>

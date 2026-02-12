@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="metaTitle">IDEArc – Infrastructure Design Engineering & Architecture</title>
-  <meta name="description" content="IDEArc, 2015'ten bu yana altyapı tasarımı, BIM, yol projeleri ve büyük ölçekli danışmanlık hizmetleri sunan mühendislik ve müşavirlik şirketidir." data-i18n-meta="metaDescription" />
+  <title data-i18n="metaTitleExpertise">IDEArc – Uzmanlıklar</title>
+  <meta name="description" content="Yol tasarımı, BIM koordinasyonu, toprak işleri, UTK/UKOME ve sivil mühendislik uzmanlıklarımız." data-i18n-meta="metaDescriptionExpertise" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@400;600&family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
@@ -75,20 +75,20 @@
         <img src="./media/IDEArc_white.png" alt="IDEArc" />
         <span class="sr-only" data-i18n="brandName">IDEArc</span>
       </a>
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" data-i18n="menuLabel">Menü</button>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primaryNav" data-i18n="menuLabel">Menü</button>
       <nav id="primaryNav" aria-label="Ana menü">
         <a href="#anasayfa" data-scroll data-i18n="navHome">Anasayfa</a>
         <a href="./hakkinda.html" data-i18n="navAbout">Hakkında</a>
         <a href="./portfoy.html" data-i18n="navPortfolio">Portföy</a>
         <a href="./oduller.html" data-i18n="navAwards">Ödüller</a>
-        <a href="./uzmanliklar.html" class="active" data-i18n="navExpertise">Uzmanlıklar</a>
+        <a href="./uzmanliklar.html" class="active" aria-current="page" data-i18n="navExpertise">Uzmanlıklar</a>
         <a href="./iletisim.html" data-i18n="navContact">İletişim</a>
       </nav>
       <div class="lang-toggle" role="group" aria-label="Language switcher">
-        <button class="lang-btn active" data-lang-btn data-lang="tr">TR</button>
-        <button class="lang-btn" data-lang-btn data-lang="en">EN</button>
-        <button class="lang-btn" data-lang-btn data-lang="bg">BG</button>
-        <button class="lang-btn" data-lang-btn data-lang="ar">AR</button>
+        <button class="lang-btn active" aria-pressed="true" data-lang-btn data-lang="tr">TR</button>
+        <button class="lang-btn" aria-pressed="false" data-lang-btn data-lang="en">EN</button>
+        <button class="lang-btn" aria-pressed="false" data-lang-btn data-lang="bg">BG</button>
+        <button class="lang-btn" aria-pressed="false" data-lang-btn data-lang="ar">AR</button>
       </div>
       <div class="socials" aria-label="Sosyal medya">
         <a href="https://www.linkedin.com/company/idearccomtr" target="_blank" rel="noopener" aria-label="LinkedIn">
