@@ -2,6 +2,12 @@ import { getCurrentLang, onLanguageChange } from './i18n.js';
 
 let metricObserver;
 
+function shouldSkipMetricAnimation() {
+  const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+  const saveData = navigator.connection?.saveData ?? false;
+  return reduceMotion || saveData;
+}
+
 function getMetricLocale() {
   switch (getCurrentLang()) {
     case 'en':
@@ -107,6 +113,17 @@ function initMetricCounters() {
 
   metricElements.forEach(cancelMetricAnimation);
   prepareMetricTargets(metricElements, false);
+
+  if (shouldSkipMetricAnimation()) {
+    if (metricObserver) {
+      metricObserver.disconnect();
+    }
+    metricElements.forEach((el) => {
+      el.textContent = el.dataset.targetText || el.textContent;
+      el.dataset.animated = 'true';
+    });
+    return;
+  }
 
   if (!('IntersectionObserver' in window)) {
     metricElements.forEach((el) => {

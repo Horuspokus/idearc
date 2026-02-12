@@ -1,18 +1,51 @@
+function prefersReducedMotion() {
+  return window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+}
+
+function prefersSaveData() {
+  return navigator.connection?.saveData ?? false;
+}
+
+function applyMediaPreferences() {
+  const reduceMotion = prefersReducedMotion();
+  const saveData = prefersSaveData();
+
+  if (!reduceMotion && !saveData) return;
+
+  const root = document.documentElement;
+  root?.classList.toggle('reduce-motion', reduceMotion);
+  root?.classList.toggle('save-data', saveData);
+
+  const heroVideo = document.querySelector('[data-hero-video]');
+  if (!heroVideo) return;
+
+  heroVideo.pause();
+  heroVideo.removeAttribute('autoplay');
+  heroVideo.removeAttribute('loop');
+  heroVideo.setAttribute('preload', 'none');
+  heroVideo.querySelectorAll('source').forEach((source) => {
+    source.removeAttribute('src');
+  });
+  heroVideo.load();
+}
+
 function smoothScrollTo(targetId) {
   if (!targetId) return;
+  const behavior = prefersReducedMotion() ? 'auto' : 'smooth';
 
   if (targetId === '#anasayfa') {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior });
     return;
   }
 
   const el = document.querySelector(targetId);
   if (el) {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    el.scrollIntoView({ behavior, block: 'start' });
   }
 }
 
 export function initNavigation() {
+  applyMediaPreferences();
   const nav = document.getElementById('primaryNav');
   const toggleBtn = document.querySelector('[data-nav-toggle]');
   const homeUrl = document.body?.dataset.home || 'index.html';

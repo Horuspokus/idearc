@@ -199,6 +199,9 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero video,
@@ -218,6 +221,26 @@ nav a:hover {
 
 .hero video {
   filter: grayscale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero {
+    background-image: var(--hero-poster, none);
+  }
+
+  .hero video {
+    display: none;
+  }
+}
+
+html.save-data .hero,
+html.reduce-motion .hero {
+  background-image: var(--hero-poster, none);
+}
+
+html.save-data .hero video,
+html.reduce-motion .hero video {
+  display: none;
 }
 
 .hero-content {
